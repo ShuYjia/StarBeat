@@ -1173,6 +1173,10 @@
       <Project>{38FC46C4-124C-52E6-6834-8E4BBAA402D0}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
+    <ProjectReference Include="UniTask.Addressables.csproj">
+      <Project>{69ADB901-A26C-D046-2424-0E8DF0E3E453}</Project>
+      <Name>UniTask.Addressables</Name>
+    </ProjectReference>
     <ProjectReference Include="Pico.Spatializer.Editor.csproj">
       <Project>{244A52BF-D6F6-79E9-4A92-DC124921B174}</Project>
       <Name>Pico.Spatializer.Editor</Name>
@@ -1188,6 +1192,18 @@
     <ProjectReference Include="PICO.TobSupport.csproj">
       <Project>{4FBFE586-A63E-637D-89F2-84AFE8D4A934}</Project>
       <Name>PICO.TobSupport</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniTask.TextMeshPro.csproj">
+      <Project>{22293E4E-E40F-25C5-6F8C-D97D6B9C6746}</Project>
+      <Name>UniTask.TextMeshPro</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniTask.csproj">
+      <Project>{CBEB81C5-C9B6-2FFC-1BB1-E93909EE3FC8}</Project>
+      <Name>UniTask</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniTask.Linq.csproj">
+      <Project>{07D06004-CECA-A948-8066-E79FEE2F3C2F}</Project>
+      <Name>UniTask.Linq</Name>
     </ProjectReference>
     <ProjectReference Include="Pico.Spatializer.Example.csproj">
       <Project>{40720A4F-FF15-8452-B771-DBCBA6FEFD01}</Project>
@@ -1212,6 +1228,10 @@
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.csproj">
       <Project>{76D77B54-0F21-8940-3BE7-E40C6DB0E70B}</Project>
       <Name>Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniTask.DOTween.csproj">
+      <Project>{580EA6E9-0087-EB10-8D11-34C1110C5962}</Project>
+      <Name>UniTask.DOTween</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

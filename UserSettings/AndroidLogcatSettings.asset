@@ -3,7 +3,7 @@
     "m_SelectedProcess": {
         "deviceId": "PA9410MGK1030288G",
         "name": "com.StarBeat.StarBeat",
-        "processId": 20225,
+        "processId": 2453,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -132,6 +132,24 @@
             "deviceId": "PA9410MGK1030288G",
             "name": "com.StarBeat.StarBeat",
             "processId": 20225,
+            "exited": false
+        },
+        {
+            "deviceId": "PA9410MGK1030288G",
+            "name": "com.StarBeat.StarBeat",
+            "processId": 23787,
+            "exited": false
+        },
+        {
+            "deviceId": "PA9410MGK1030288G",
+            "name": "com.StarBeat.StarBeat",
+            "processId": 21950,
+            "exited": false
+        },
+        {
+            "deviceId": "PA9410MGK1030288G",
+            "name": "com.StarBeat.StarBeat",
+            "processId": 2453,
             "exited": false
         }
     ],

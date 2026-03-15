@@ -31,7 +31,7 @@ MonoBehaviour:
   stageMode: 1
   videoSeeThrough: 1
   spatialAnchor: 1
-  sceneCapture: 0
+  sceneCapture: 1
   sharedAnchor: 0
   spatialMesh: 0
   secureMR: 0

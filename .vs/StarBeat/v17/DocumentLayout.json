@@ -3,7 +3,23 @@
   "WorkspaceRootPath": "E:\\UnityProject\\StarBeat\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{38FC46C4-124C-52E6-6834-8E4BBAA402D0}|Assembly-CSharp.csproj|e:\\unityproject\\starbeat\\assets\\scripts\\spatialanchors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{38FC46C4-124C-52E6-6834-8E4BBAA402D0}|Assembly-CSharp.csproj|e:\\unityproject\\starbeat\\assets\\scripts\\anchor\\spacecalibration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38FC46C4-124C-52E6-6834-8E4BBAA402D0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\anchor\\spacecalibration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38FC46C4-124C-52E6-6834-8E4BBAA402D0}|Assembly-CSharp.csproj|e:\\unityproject\\starbeat\\assets\\scripts\\anchor\\anchordata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38FC46C4-124C-52E6-6834-8E4BBAA402D0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\anchor\\anchordata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38FC46C4-124C-52E6-6834-8E4BBAA402D0}|Assembly-CSharp.csproj|E:\\UnityProject\\StarBeat\\assets\\scripts\\anchor\\ianchordata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38FC46C4-124C-52E6-6834-8E4BBAA402D0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\anchor\\ianchordata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38FC46C4-124C-52E6-6834-8E4BBAA402D0}|Assembly-CSharp.csproj|E:\\UnityProject\\StarBeat\\assets\\scripts\\anchor\\shapeinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38FC46C4-124C-52E6-6834-8E4BBAA402D0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\anchor\\shapeinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38FC46C4-124C-52E6-6834-8E4BBAA402D0}|Assembly-CSharp.csproj|E:\\UnityProject\\StarBeat\\assets\\scripts\\spatialanchors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{38FC46C4-124C-52E6-6834-8E4BBAA402D0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spatialanchors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -30,11 +46,61 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SpaceCalibration.cs",
+              "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\Anchor\\SpaceCalibration.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Anchor\\SpaceCalibration.cs",
+              "ToolTip": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\Anchor\\SpaceCalibration.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Anchor\\SpaceCalibration.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T13:13:44.972Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AnchorData.cs",
+              "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\Anchor\\AnchorData.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Anchor\\AnchorData.cs",
+              "ToolTip": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\Anchor\\AnchorData.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Anchor\\AnchorData.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAADwv2kAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T12:33:02.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IAnchorData.cs",
+              "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\Anchor\\IAnchorData.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Anchor\\IAnchorData.cs",
+              "ToolTip": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\Anchor\\IAnchorData.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Anchor\\IAnchorData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T12:19:09.073Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "ShapeInfo.cs",
+              "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\Anchor\\ShapeInfo.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Anchor\\ShapeInfo.cs",
+              "ToolTip": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\Anchor\\ShapeInfo.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Anchor\\ShapeInfo.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T12:12:11.386Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Lit.shader",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.11\\Shaders\\Lit.shader",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.11\\Shaders\\Lit.shader",
@@ -42,11 +108,12 @@
               "RelativeToolTip": "Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.11\\Shaders\\Lit.shader",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
-              "WhenOpened": "2026-03-14T14:15:24.375Z"
+              "WhenOpened": "2026-03-14T14:15:24.375Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "SeeThroughManager.cs",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\SeeThroughManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SeeThroughManager.cs",
@@ -54,12 +121,11 @@
               "RelativeToolTip": "Assets\\Scripts\\SeeThroughManager.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAzwBQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T12:27:35.211Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-14T12:27:35.211Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "SpatialAnchors.cs",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\SpatialAnchors.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SpatialAnchors.cs",
@@ -67,12 +133,11 @@
               "RelativeToolTip": "Assets\\Scripts\\SpatialAnchors.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAcwB0AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T08:30:28.035Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-14T08:30:28.035Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "AnchorCTR.cs",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\AnchorCTR.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\AnchorCTR.cs",
@@ -80,12 +145,11 @@
               "RelativeToolTip": "Assets\\Scripts\\AnchorCTR.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAAwGAAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T08:28:32.552Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-14T08:28:32.552Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "LookAtCamera.cs",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\LookAtCamera.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\LookAtCamera.cs",
