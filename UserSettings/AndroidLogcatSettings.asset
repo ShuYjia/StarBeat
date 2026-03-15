@@ -1,0 +1,231 @@
+{
+    "m_SelectedDeviceId": "PA9410MGK1030288G",
+    "m_SelectedProcess": {
+        "deviceId": "PA9410MGK1030288G",
+        "name": "com.StarBeat.StarBeat",
+        "processId": 20225,
+        "exited": false
+    },
+    "m_SelectedPriority": 0,
+    "m_KnownProcessesForSerialization": [
+        {
+            "deviceId": "PA9410MGK1030288G",
+            "name": "com.StarBeat.StarBeat",
+            "processId": 9204,
+            "exited": true
+        },
+        {
+            "deviceId": "PA9410MGK1030288G",
+            "name": "com.StarBeat.StarBeat",
+            "processId": 10283,
+            "exited": true
+        },
+        {
+            "deviceId": "PA9410MGK1030288G",
+            "name": "com.StarBeat.StarBeat",
+            "processId": 24619,
+            "exited": true
+        },
+        {
+            "deviceId": "PA9410MGK1030288G",
+            "name": "com.StarBeat.StarBeat",
+            "processId": 24969,
+            "exited": true
+        },
+        {
+            "deviceId": "PA9410MGK1030288G",
+            "name": "com.StarBeat.StarBeat",
+            "processId": 27343,
+            "exited": false
+        },
+        {
+            "deviceId": "PA9410MGK1030288G",
+            "name": "com.StarBeat.StarBeat",
+            "processId": 28240,
+            "exited": false
+        },
+        {
+            "deviceId": "PA9410MGK1030288G",
+            "name": "com.StarBeat.StarBeat",
+            "processId": 28851,
+            "exited": false
+        },
+        {
+            "deviceId": "PA9410MGK1030288G",
+            "name": "com.StarBeat.StarBeat",
+            "processId": 29365,
+            "exited": false
+        },
+        {
+            "deviceId": "PA9410MGK1030288G",
+            "name": "com.StarBeat.StarBeat",
+            "processId": 30871,
+            "exited": false
+        },
+        {
+            "deviceId": "PA9410MGK1030288G",
+            "name": "com.StarBeat.StarBeat",
+            "processId": 994,
+            "exited": false
+        },
+        {
+            "deviceId": "PA9410MGK1030288G",
+            "name": "com.StarBeat.StarBeat",
+            "processId": 5914,
+            "exited": false
+        },
+        {
+            "deviceId": "PA9410MGK1030288G",
+            "name": "com.StarBeat.StarBeat",
+            "processId": 9602,
+            "exited": false
+        },
+        {
+            "deviceId": "PA9410MGK1030288G",
+            "name": "com.StarBeat.StarBeat",
+            "processId": 9023,
+            "exited": false
+        },
+        {
+            "deviceId": "PA9410MGK1030288G",
+            "name": "com.StarBeat.StarBeat",
+            "processId": 9886,
+            "exited": false
+        },
+        {
+            "deviceId": "PA9410MGK1030288G",
+            "name": "com.StarBeat.StarBeat",
+            "processId": 13348,
+            "exited": false
+        },
+        {
+            "deviceId": "PA9410MGK1030288G",
+            "name": "com.StarBeat.StarBeat",
+            "processId": 15732,
+            "exited": false
+        },
+        {
+            "deviceId": "PA9410MGK1030288G",
+            "name": "com.StarBeat.StarBeat",
+            "processId": 17019,
+            "exited": false
+        },
+        {
+            "deviceId": "PA9410MGK1030288G",
+            "name": "com.StarBeat.StarBeat",
+            "processId": 17956,
+            "exited": false
+        },
+        {
+            "deviceId": "PA9410MGK1030288G",
+            "name": "com.StarBeat.StarBeat",
+            "processId": 20924,
+            "exited": false
+        },
+        {
+            "deviceId": "PA9410MGK1030288G",
+            "name": "com.StarBeat.StarBeat",
+            "processId": 19216,
+            "exited": false
+        },
+        {
+            "deviceId": "PA9410MGK1030288G",
+            "name": "com.StarBeat.StarBeat",
+            "processId": 20225,
+            "exited": false
+        }
+    ],
+    "m_Tags": {
+        "m_Entries": [
+            {
+                "m_Name": "Filter by all listed tags",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "No Filter",
+                "m_Selected": true
+            },
+            {
+                "m_Name": "",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "Tag Control...",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "Unity",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "CRASH",
+                "m_Selected": false
+            }
+        ]
+    },
+    "m_ExtraWindowState": {
+        "Type": 0,
+        "Height": 0.0
+    },
+    "m_MemoryViewerState": {
+        "MemoryWindowWidth": 170.0,
+        "MemoryTypeEnabled": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+        ],
+        "MemoryGroup": 2,
+        "AutoCapture": true
+    },
+    "m_FilterOptions": {
+        "m_Filter": "",
+        "m_UseRegularExpressions": false,
+        "m_MatchCase": false
+    },
+    "m_SymbolPaths": [],
+    "m_CaptureVideoSettings": {
+        "TimeLimitEnabled": false,
+        "TimeLimit": 180,
+        "VideoSizeEnabled": false,
+        "VideoSizeX": 1280,
+        "VideoSizeY": 720,
+        "BitRateEnabled": false,
+        "BitRateK": 20000,
+        "DisplayIdEnabled": false,
+        "DisplayId": ""
+    },
+    "m_ScreenCaptureSettings": {
+        "Mode": 0,
+        "m_LastSaveLocation": [
+            "E:\\UnityProject\\StarBeat",
+            "E:\\UnityProject\\StarBeat"
+        ]
+    },
+    "m_QueryLayoutSettings": {
+        "LastLayoutSaveLocation": "",
+        "LastScreenshotSaveLocation": ""
+    },
+    "m_InputSettings": {
+        "ShiftModifier": false,
+        "SendText": "",
+        "PosixKillSignal": 0,
+        "TargetProcess": {
+            "deviceId": "",
+            "name": "",
+            "processId": 0,
+            "exited": false
+        }
+    },
+    "m_AutoScroll": 2
+}
