@@ -1193,13 +1193,13 @@
       <Project>{4FBFE586-A63E-637D-89F2-84AFE8D4A934}</Project>
       <Name>PICO.TobSupport</Name>
     </ProjectReference>
-    <ProjectReference Include="UniTask.TextMeshPro.csproj">
-      <Project>{22293E4E-E40F-25C5-6F8C-D97D6B9C6746}</Project>
-      <Name>UniTask.TextMeshPro</Name>
-    </ProjectReference>
     <ProjectReference Include="UniTask.csproj">
       <Project>{CBEB81C5-C9B6-2FFC-1BB1-E93909EE3FC8}</Project>
       <Name>UniTask</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniTask.TextMeshPro.csproj">
+      <Project>{22293E4E-E40F-25C5-6F8C-D97D6B9C6746}</Project>
+      <Name>UniTask.TextMeshPro</Name>
     </ProjectReference>
     <ProjectReference Include="UniTask.Linq.csproj">
       <Project>{07D06004-CECA-A948-8066-E79FEE2F3C2F}</Project>

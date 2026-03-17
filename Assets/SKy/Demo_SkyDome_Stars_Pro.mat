@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Demo_SkyDome_Stars_Pro
+  m_Shader: {fileID: 4800000, guid: e7533f70baf2be646974b396904f9f64, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _StarEdgeColorTex:
+        m_Texture: {fileID: 2800000, guid: 8607e4959eb0cb345a12c696f7f110a6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _StarMask:
+        m_Texture: {fileID: 2800000, guid: 4af319538e187be4c936f2e329f361ea, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Density: 0.444
+    - _EnableMovement: 0
+    - _GridScale: 20
+    - _StarSize: 0.02
+    - _TarPointspeed: 0.31
+    - _TwinkleSpeed: 5
+    m_Colors:
+    - _ColorA: {r: 0.032751847, g: 0.07931217, b: 0.1509434, a: 1}
+    - _ColorB: {r: 0.098039225, g: 0.14901961, b: 0.227451, a: 1}
+    - _ColorC: {r: 0.14509805, g: 0.22352943, b: 0.3803922, a: 1}
+    - _StarColor: {r: 1, g: 1, b: 1, a: 1}
+    - _StarSizeMinMax: {r: 0.005, g: 0.01, b: 0, a: 0}
+  m_BuildTextureStacks: []

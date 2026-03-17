@@ -5,12 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
     path: Assets/Star.unity
     guid: 600e1b8dd8f53574b8ca6bc613b17038
+  - enabled: 0
+    path: Assets/Scenes/Star1.unity
+    guid: 40e0f3d913622c54e88341b712ce43fa
   m_configObjects:
     Unity.XR.PXR.Settings: {fileID: 11400000, guid: c2f2ffc1ec2cfa2489f2362a904d1223,
       type: 2}
