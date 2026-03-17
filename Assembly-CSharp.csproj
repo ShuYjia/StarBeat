@@ -80,6 +80,7 @@
     <None Include="Assets\TwoWorlds\Shaders\CloudTest.shader" />
     <None Include="Assets\TwoWorlds\Shaders\SkyDome.shader" />
     <None Include="Assets\Shader\StencilShader.shader" />
+    <None Include="Assets\Rainbow\RainbowShader.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

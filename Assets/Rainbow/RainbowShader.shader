@@ -1,14 +1,12 @@
-Shader "Unlit/HoleShader"
-//用于显示现实世界画面（局部透视
-
+Shader "Unlit/RainbowShader"
 {
     Properties
     {
-        _MainTex("Texture", 2D) = "white" {}
+        _MainTex ("Texture", 2D) = "white" {}
     }
-        SubShader
+    SubShader
     {
-        Tags { "RenderType" = "Opaque" }
+        Tags { "RenderType"="Opaque" }
         LOD 100
 
         Pass
@@ -16,7 +14,7 @@ Shader "Unlit/HoleShader"
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag
-            // make fog work
+            // make fog workS
             #pragma multi_compile_fog
 
             #include "UnityCG.cginc"
@@ -37,7 +35,7 @@ Shader "Unlit/HoleShader"
             sampler2D _MainTex;
             float4 _MainTex_ST;
 
-            v2f vert(appdata v)
+            v2f vert (appdata v)
             {
                 v2f o;
                 o.vertex = UnityObjectToClipPos(v.vertex);
@@ -46,14 +44,13 @@ Shader "Unlit/HoleShader"
                 return o;
             }
 
-            fixed4 frag(v2f i) : SV_Target
+            fixed4 frag (v2f i) : SV_Target
             {
                 // sample the texture
-                //fixed4 col = tex2D(_MainTex, i.uv);
+                fixed4 col = tex2D(_MainTex, i.uv);
                 // apply fog
-                //UNITY_APPLY_FOG(i.fogCoord, col);
-                //return col;
-                return float4(0, 0, 0, 0);
+                UNITY_APPLY_FOG(i.fogCoord, col);
+                return col;
             }
             ENDCG
         }
