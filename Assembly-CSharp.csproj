@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\SpatialAnchors.cs" />
     <Compile Include="Assets\My\AudioVortexParticles.cs" />
+    <Compile Include="Assets\Scripts\MusicPlayerManager.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Sindri Studios\Music-Beat\Scripts\CharacterAnimControl.cs" />
     <Compile Include="Assets\Sindri Studios\Music-Beat\Scripts\ParticleBehaviour.cs" />

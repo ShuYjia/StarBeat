@@ -47,8 +47,8 @@ public class SpatialAnchor : MonoBehaviour
     public GameObject MainUI;
 
     //°´¼ü
-    public InputActionReference rightGrab;
-    public InputActionReference leftGrab;
+    public InputActionReference leftSecondaryButton_Y;
+   // public InputActionReference leftGrab;
     public InputActionReference rprimaryButton_A;
     public GameObject anchorPreview;
     public AnchorCTR anchorPrefab;
@@ -153,8 +153,8 @@ public class SpatialAnchor : MonoBehaviour
 
     private void OnEnable()
     {
-        rightGrab.action.started += OnRightGrabPressed;
-        rightGrab.action.canceled += OnRightGrabReleased;
+        leftSecondaryButton_Y.action.started += OnRightGrabPressed;
+        leftSecondaryButton_Y.action.canceled += OnRightGrabReleased;
         //A
         rprimaryButton_A.action.started += OnRprimaryButton_APressed;
         rprimaryButton_A.action.canceled += OnRprimaryButton_ACanceled;
@@ -285,13 +285,14 @@ public class SpatialAnchor : MonoBehaviour
 
     private void OnRightGrabPressed(InputAction.CallbackContext context)
     {
+        Debug.Log("456456");
         MainUI.gameObject.SetActive(true);
     }
 
     private void OnDisable()
     {
-        rightGrab.action.started -= OnRightGrabPressed;
-        rightGrab.action.canceled -= OnRightGrabReleased;
+        leftSecondaryButton_Y.action.started -= OnRightGrabPressed;
+        leftSecondaryButton_Y.action.canceled -= OnRightGrabReleased;
 
         // ÒÆ³ý A ¼üÊÂ¼þ
         rprimaryButton_A.action.started -= OnRprimaryButton_APressed;
