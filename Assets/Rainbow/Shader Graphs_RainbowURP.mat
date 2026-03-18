@@ -54,5 +54,5 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
-    - _WaiJInAndNeiJIn: {r: 0.38, g: 0.5, b: 0, a: 0}
+    - _WaiJInAndNeiJIn: {r: 0.45, g: 0.5, b: 0, a: 0}
   m_BuildTextureStacks: []

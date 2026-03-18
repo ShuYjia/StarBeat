@@ -3,7 +3,7 @@
     "m_SelectedProcess": {
         "deviceId": "PA9410MGK1030288G",
         "name": "com.StarBeat.StarBeat",
-        "processId": 4127,
+        "processId": 6919,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -270,6 +270,12 @@
             "deviceId": "PA9410MGK1030288G",
             "name": "com.StarBeat.StarBeat",
             "processId": 4127,
+            "exited": false
+        },
+        {
+            "deviceId": "PA9410MGK1030288G",
+            "name": "com.StarBeat.StarBeat",
+            "processId": 6919,
             "exited": false
         }
     ],

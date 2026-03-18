@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniTask.Linq", "UniTask.Lin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pico.Spatializer", "Pico.Spatializer.csproj", "{68A218D0-F4FF-3F57-9B05-CC98F4EA599C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{F310C4D3-EBC3-B7AE-1E80-8C4A6AE9C530}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PICO.Platform", "PICO.Platform.csproj", "{AAC33DCB-3360-CD4E-2122-A1ACD6640D1B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PICO.TobSupport", "PICO.TobSupport.csproj", "{4FBFE586-A63E-637D-89F2-84AFE8D4A934}"
@@ -26,8 +28,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PICO.Platform.Editor", "PICO.Platform.Editor.csproj", "{3656B56F-9718-F427-9037-1364C8BD4781}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniTask.TextMeshPro", "UniTask.TextMeshPro.csproj", "{22293E4E-E40F-25C5-6F8C-D97D6B9C6746}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{F310C4D3-EBC3-B7AE-1E80-8C4A6AE9C530}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor", "Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.csproj", "{76D77B54-0F21-8940-3BE7-E40C6DB0E70B}"
 EndProject
@@ -67,6 +67,10 @@ Global
 		{68A218D0-F4FF-3F57-9B05-CC98F4EA599C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68A218D0-F4FF-3F57-9B05-CC98F4EA599C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68A218D0-F4FF-3F57-9B05-CC98F4EA599C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F310C4D3-EBC3-B7AE-1E80-8C4A6AE9C530}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F310C4D3-EBC3-B7AE-1E80-8C4A6AE9C530}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F310C4D3-EBC3-B7AE-1E80-8C4A6AE9C530}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F310C4D3-EBC3-B7AE-1E80-8C4A6AE9C530}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AAC33DCB-3360-CD4E-2122-A1ACD6640D1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AAC33DCB-3360-CD4E-2122-A1ACD6640D1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAC33DCB-3360-CD4E-2122-A1ACD6640D1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -95,10 +99,6 @@ Global
 		{22293E4E-E40F-25C5-6F8C-D97D6B9C6746}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22293E4E-E40F-25C5-6F8C-D97D6B9C6746}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22293E4E-E40F-25C5-6F8C-D97D6B9C6746}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F310C4D3-EBC3-B7AE-1E80-8C4A6AE9C530}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F310C4D3-EBC3-B7AE-1E80-8C4A6AE9C530}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F310C4D3-EBC3-B7AE-1E80-8C4A6AE9C530}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F310C4D3-EBC3-B7AE-1E80-8C4A6AE9C530}.Release|Any CPU.Build.0 = Release|Any CPU
 		{76D77B54-0F21-8940-3BE7-E40C6DB0E70B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{76D77B54-0F21-8940-3BE7-E40C6DB0E70B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76D77B54-0F21-8940-3BE7-E40C6DB0E70B}.Release|Any CPU.ActiveCfg = Release|Any CPU

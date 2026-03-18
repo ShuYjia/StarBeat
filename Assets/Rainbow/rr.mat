@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: rr
+  m_Shader: {fileID: 4800000, guid: 01ef8338d3c27344d87009d322667bee, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats:
+    - _Alpha: 1
+    - _BandWidth: 0.03
+    - _Brightness: 1.6
+    - _EdgeSoftness: 0.008
+    - _EmissionIntensity: 2.2
+    - _FresnelIntensity: 0.5
+    - _FresnelPower: 2.2
+    - _Gap: 0.01
+    - _Radius: 0.25
+    - _Saturation: 1.6
+    - _SideFade: 0.5
+    - _ThicknessFade: 0.3
+    - _ToneMapExposure: 1
+    - _Width: 0.15
+    m_Colors:
+    - _Center: {r: 0.5, g: 0.5, b: 0, a: 0}
+    - _Color0: {r: 1, g: 0, b: 0, a: 1}
+    - _Color1: {r: 1, g: 0.45, b: 0, a: 1}
+    - _Color2: {r: 1, g: 0.9, b: 0, a: 1}
+    - _Color3: {r: 0.19999996, g: 0.95, b: 0.14999998, a: 1}
+    - _Color4: {r: 0, g: 0.9, b: 0.85, a: 1}
+    - _Color5: {r: 0, g: 0.45, b: 1, a: 1}
+    - _Color6: {r: 0.95, g: 0.14999998, b: 0.95, a: 1}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []

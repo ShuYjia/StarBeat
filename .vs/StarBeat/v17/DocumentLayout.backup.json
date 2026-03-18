@@ -3,7 +3,15 @@
   "WorkspaceRootPath": "E:\\UnityProject\\StarBeat\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{38FC46C4-124C-52E6-6834-8E4BBAA402D0}|Assembly-CSharp.csproj|e:\\unityproject\\starbeat\\assets\\sky\\starrysky.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "AbsoluteMoniker": "D:0:0:{38FC46C4-124C-52E6-6834-8E4BBAA402D0}|Assembly-CSharp.csproj|e:\\unityproject\\starbeat\\assets\\rainbow\\rainbow2.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{38FC46C4-124C-52E6-6834-8E4BBAA402D0}|Assembly-CSharp.csproj|solutionrelative:assets\\rainbow\\rainbow2.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38FC46C4-124C-52E6-6834-8E4BBAA402D0}|Assembly-CSharp.csproj|E:\\UnityProject\\StarBeat\\assets\\rainbow\\rainbowshader.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{38FC46C4-124C-52E6-6834-8E4BBAA402D0}|Assembly-CSharp.csproj|solutionrelative:assets\\rainbow\\rainbowshader.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38FC46C4-124C-52E6-6834-8E4BBAA402D0}|Assembly-CSharp.csproj|E:\\UnityProject\\StarBeat\\assets\\sky\\starrysky.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{38FC46C4-124C-52E6-6834-8E4BBAA402D0}|Assembly-CSharp.csproj|solutionrelative:assets\\sky\\starrysky.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
@@ -11,7 +19,7 @@
       "RelativeMoniker": "D:0:0:{38FC46C4-124C-52E6-6834-8E4BBAA402D0}|Assembly-CSharp.csproj|solutionrelative:assets\\shader\\holeshader.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{38FC46C4-124C-52E6-6834-8E4BBAA402D0}|Assembly-CSharp.csproj|e:\\unityproject\\starbeat\\assets\\scripts\\portalctr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{38FC46C4-124C-52E6-6834-8E4BBAA402D0}|Assembly-CSharp.csproj|E:\\UnityProject\\StarBeat\\assets\\scripts\\portalctr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{38FC46C4-124C-52E6-6834-8E4BBAA402D0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\portalctr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -67,6 +75,31 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Rainbow2.shader",
+              "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Rainbow\\Rainbow2.shader",
+              "RelativeDocumentMoniker": "Assets\\Rainbow\\Rainbow2.shader",
+              "ToolTip": "E:\\UnityProject\\StarBeat\\Assets\\Rainbow\\Rainbow2.shader",
+              "RelativeToolTip": "Assets\\Rainbow\\Rainbow2.shader",
+              "ViewState": "AgIAADgAAAAAAAAAAAAuwDQAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
+              "WhenOpened": "2026-03-18T07:08:10.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RainbowShader.shader",
+              "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Rainbow\\RainbowShader.shader",
+              "RelativeDocumentMoniker": "Assets\\Rainbow\\RainbowShader.shader",
+              "ToolTip": "E:\\UnityProject\\StarBeat\\Assets\\Rainbow\\RainbowShader.shader",
+              "RelativeToolTip": "Assets\\Rainbow\\RainbowShader.shader",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
+              "WhenOpened": "2026-03-17T13:31:25.662Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "StarrySky.shader",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\SKy\\StarrySky.shader",
               "RelativeDocumentMoniker": "Assets\\SKy\\StarrySky.shader",
@@ -74,12 +107,11 @@
               "RelativeToolTip": "Assets\\SKy\\StarrySky.shader",
               "ViewState": "AgIAAE4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
-              "WhenOpened": "2026-03-17T08:55:42.337Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-17T08:55:42.337Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "PortalCTR.cs",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\PortalCTR.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PortalCTR.cs",
@@ -87,12 +119,11 @@
               "RelativeToolTip": "Assets\\Scripts\\PortalCTR.cs",
               "ViewState": "AgIAADIAAAAAAAAAAAAswEUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-16T10:18:21.947Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-16T10:18:21.947Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "HoleShader.shader",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Shader\\HoleShader.shader",
               "RelativeDocumentMoniker": "Assets\\Shader\\HoleShader.shader",
@@ -100,12 +131,11 @@
               "RelativeToolTip": "Assets\\Shader\\HoleShader.shader",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
-              "WhenOpened": "2026-03-16T09:23:11.598Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-16T09:23:11.598Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "StencilShader.shader",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Shader\\StencilShader.shader",
               "RelativeDocumentMoniker": "Assets\\Shader\\StencilShader.shader",
@@ -117,7 +147,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "SpaceCalibration.cs",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\Anchor\\SpaceCalibration.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Anchor\\SpaceCalibration.cs",
@@ -129,7 +159,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "AnchorData.cs",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\Anchor\\AnchorData.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Anchor\\AnchorData.cs",
@@ -141,7 +171,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "IAnchorData.cs",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\Anchor\\IAnchorData.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Anchor\\IAnchorData.cs",
@@ -153,7 +183,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "ShapeInfo.cs",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\Anchor\\ShapeInfo.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Anchor\\ShapeInfo.cs",
@@ -165,7 +195,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Lit.shader",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.11\\Shaders\\Lit.shader",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.11\\Shaders\\Lit.shader",
@@ -177,7 +207,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "SeeThroughManager.cs",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\SeeThroughManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SeeThroughManager.cs",
@@ -189,7 +219,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "SpatialAnchors.cs",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\SpatialAnchors.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SpatialAnchors.cs",
@@ -201,7 +231,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "AnchorCTR.cs",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\AnchorCTR.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\AnchorCTR.cs",
@@ -213,7 +243,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "LookAtCamera.cs",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\LookAtCamera.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\LookAtCamera.cs",
