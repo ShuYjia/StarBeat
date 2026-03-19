@@ -90,8 +90,7 @@
               "RelativeToolTip": "Assets\\Sindri Studios\\Music-Beat\\Scripts\\AudioController.cs",
               "ViewState": "AgIAAF8AAAAAAAAAAAAowIkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T13:10:52.671Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-18T13:10:52.671Z"
             },
             {
               "$type": "Document",
@@ -101,7 +100,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\MusicPlayerManager.cs",
               "ToolTip": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\MusicPlayerManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\MusicPlayerManager.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBUAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAmwDcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-18T13:00:01.622Z",
               "EditorCaption": ""
@@ -164,8 +163,7 @@
               "RelativeToolTip": "Assets\\Scripts\\AnchorCTR.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAGAAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T08:28:32.552Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-14T08:28:32.552Z"
             },
             {
               "$type": "Document",
@@ -177,8 +175,7 @@
               "RelativeToolTip": "Assets\\Scripts\\SpatialAnchors.cs",
               "ViewState": "AgIAAI0AAAAAAAAAAAAIwJkAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T08:30:28.035Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-14T08:30:28.035Z"
             },
             {
               "$type": "Document",
@@ -262,7 +259,8 @@
               "RelativeToolTip": "Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.11\\Shaders\\Lit.shader",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
-              "WhenOpened": "2026-03-14T14:15:24.375Z"
+              "WhenOpened": "2026-03-14T14:15:24.375Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

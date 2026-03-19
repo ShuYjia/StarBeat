@@ -51,7 +51,7 @@ public class MusicPlayerManager : MonoBehaviour
         {
             UpdateSongDisplay();
             // 初始化时如果还没播放，显示播放图标
-            pauseBtn.image.sprite = playIcon;
+            //pauseBtn.image.sprite = playIcon;
         }
     }
 

@@ -92,7 +92,9 @@
     <None Include="Assets\Sindri Studios\Music-Beat\Graphics\Create Graphics File Here.txt" />
     <None Include="Assets\SKy\StarrySky.shader" />
     <None Include="Assets\TwoWorlds\Shaders\CloudTest.shader" />
+    <None Include="Assets\SimpleLowPolyNature\Readme.txt" />
     <None Include="Assets\TwoWorlds\Shaders\SkyDome.shader" />
+    <None Include="Assets\SimpleLowPolyNature\Shaders\SimpleWater.shader" />
     <None Include="Assets\Shader\StencilShader.shader" />
     <None Include="Assets\Rainbow\RainbowShader.shader" />
   </ItemGroup>

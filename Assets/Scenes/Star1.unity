@@ -1757,9 +1757,7 @@ MonoBehaviour:
   LoadAnchorBtn: {fileID: 561561312}
   ClearAnchorBtn: {fileID: 576740479}
   MainUI: {fileID: 77250833}
-  rightGrab: {fileID: -5252355015341755693, guid: c348712bda248c246b8c49b3db54643f,
-    type: 3}
-  leftGrab: {fileID: 0}
+  leftSecondaryButton_Y: {fileID: 0}
   rprimaryButton_A: {fileID: -1246820273914266388, guid: c348712bda248c246b8c49b3db54643f,
     type: 3}
   anchorPreview: {fileID: 424594011}
