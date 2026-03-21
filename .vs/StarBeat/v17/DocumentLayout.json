@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "E:\\UnityProject\\StarBeat\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{38FC46C4-124C-52E6-6834-8E4BBAA402D0}|Assembly-CSharp.csproj|e:\\unityproject\\starbeat\\assets\\scripts\\musicplayermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38FC46C4-124C-52E6-6834-8E4BBAA402D0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\musicplayermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{38FC46C4-124C-52E6-6834-8E4BBAA402D0}|Assembly-CSharp.csproj|E:\\UnityProject\\StarBeat\\assets\\scripts\\spatialanchors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{38FC46C4-124C-52E6-6834-8E4BBAA402D0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spatialanchors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{38FC46C4-124C-52E6-6834-8E4BBAA402D0}|Assembly-CSharp.csproj|E:\\UnityProject\\StarBeat\\assets\\sindri studios\\music-beat\\scripts\\audiocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38FC46C4-124C-52E6-6834-8E4BBAA402D0}|Assembly-CSharp.csproj|solutionrelative:assets\\sindri studios\\music-beat\\scripts\\audiocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{38FC46C4-124C-52E6-6834-8E4BBAA402D0}|Assembly-CSharp.csproj|E:\\UnityProject\\StarBeat\\assets\\scripts\\anchorctr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{38FC46C4-124C-52E6-6834-8E4BBAA402D0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\anchorctr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38FC46C4-124C-52E6-6834-8E4BBAA402D0}|Assembly-CSharp.csproj|E:\\UnityProject\\StarBeat\\assets\\rainbow\\rainbow2.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{38FC46C4-124C-52E6-6834-8E4BBAA402D0}|Assembly-CSharp.csproj|solutionrelative:assets\\rainbow\\rainbow2.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38FC46C4-124C-52E6-6834-8E4BBAA402D0}|Assembly-CSharp.csproj|e:\\unityproject\\starbeat\\assets\\my\\audioflowparticle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38FC46C4-124C-52E6-6834-8E4BBAA402D0}|Assembly-CSharp.csproj|solutionrelative:assets\\my\\audioflowparticle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38FC46C4-124C-52E6-6834-8E4BBAA402D0}|Assembly-CSharp.csproj|e:\\unityproject\\starbeat\\assets\\scripts\\musicplayermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38FC46C4-124C-52E6-6834-8E4BBAA402D0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\musicplayermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38FC46C4-124C-52E6-6834-8E4BBAA402D0}|Assembly-CSharp.csproj|E:\\UnityProject\\StarBeat\\assets\\sindri studios\\music-beat\\scripts\\audiocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38FC46C4-124C-52E6-6834-8E4BBAA402D0}|Assembly-CSharp.csproj|solutionrelative:assets\\sindri studios\\music-beat\\scripts\\audiocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{38FC46C4-124C-52E6-6834-8E4BBAA402D0}|Assembly-CSharp.csproj|E:\\UnityProject\\StarBeat\\assets\\scripts\\portalctr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -37,10 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{38FC46C4-124C-52E6-6834-8E4BBAA402D0}|Assembly-CSharp.csproj|E:\\UnityProject\\StarBeat\\assets\\sindri studios\\music-beat\\scripts\\unshobjectbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{38FC46C4-124C-52E6-6834-8E4BBAA402D0}|Assembly-CSharp.csproj|solutionrelative:assets\\sindri studios\\music-beat\\scripts\\unshobjectbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38FC46C4-124C-52E6-6834-8E4BBAA402D0}|Assembly-CSharp.csproj|E:\\UnityProject\\StarBeat\\assets\\rainbow\\rainbow2.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{38FC46C4-124C-52E6-6834-8E4BBAA402D0}|Assembly-CSharp.csproj|solutionrelative:assets\\rainbow\\rainbow2.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{38FC46C4-124C-52E6-6834-8E4BBAA402D0}|Assembly-CSharp.csproj|E:\\UnityProject\\StarBeat\\assets\\rainbow\\rainbowshader.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
@@ -78,23 +82,111 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AudioController.cs",
-              "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Sindri Studios\\Music-Beat\\Scripts\\AudioController.cs",
-              "RelativeDocumentMoniker": "Assets\\Sindri Studios\\Music-Beat\\Scripts\\AudioController.cs",
-              "ToolTip": "E:\\UnityProject\\StarBeat\\Assets\\Sindri Studios\\Music-Beat\\Scripts\\AudioController.cs",
-              "RelativeToolTip": "Assets\\Sindri Studios\\Music-Beat\\Scripts\\AudioController.cs",
-              "ViewState": "AgIAAF8AAAAAAAAAAAAowIkAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "AudioFlowParticle.cs",
+              "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\My\\AudioFlowParticle.cs",
+              "RelativeDocumentMoniker": "Assets\\My\\AudioFlowParticle.cs",
+              "ToolTip": "E:\\UnityProject\\StarBeat\\Assets\\My\\AudioFlowParticle.cs",
+              "RelativeToolTip": "Assets\\My\\AudioFlowParticle.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAqwD0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T13:10:52.671Z"
+              "WhenOpened": "2026-03-20T07:27:03.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PortalCTR.cs",
+              "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\PortalCTR.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PortalCTR.cs",
+              "ToolTip": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\PortalCTR.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PortalCTR.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-16T10:18:21.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "HoleShader.shader",
+              "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Shader\\HoleShader.shader",
+              "RelativeDocumentMoniker": "Assets\\Shader\\HoleShader.shader",
+              "ToolTip": "E:\\UnityProject\\StarBeat\\Assets\\Shader\\HoleShader.shader",
+              "RelativeToolTip": "Assets\\Shader\\HoleShader.shader",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
+              "WhenOpened": "2026-03-16T09:23:11.598Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "StencilShader.shader",
+              "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Shader\\StencilShader.shader",
+              "RelativeDocumentMoniker": "Assets\\Shader\\StencilShader.shader",
+              "ToolTip": "E:\\UnityProject\\StarBeat\\Assets\\Shader\\StencilShader.shader",
+              "RelativeToolTip": "Assets\\Shader\\StencilShader.shader",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
+              "WhenOpened": "2026-03-16T09:08:58.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SpaceCalibration.cs",
+              "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\Anchor\\SpaceCalibration.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Anchor\\SpaceCalibration.cs",
+              "ToolTip": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\Anchor\\SpaceCalibration.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Anchor\\SpaceCalibration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T13:13:44.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AnchorCTR.cs",
+              "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\AnchorCTR.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\AnchorCTR.cs",
+              "ToolTip": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\AnchorCTR.cs",
+              "RelativeToolTip": "Assets\\Scripts\\AnchorCTR.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCkAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T08:28:32.552Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "SpatialAnchors.cs",
+              "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\SpatialAnchors.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SpatialAnchors.cs",
+              "ToolTip": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\SpatialAnchors.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SpatialAnchors.cs",
+              "ViewState": "AgIAADIBAAAAAAAAAAAgwEsBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T08:30:28.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Rainbow2.shader",
+              "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Rainbow\\Rainbow2.shader",
+              "RelativeDocumentMoniker": "Assets\\Rainbow\\Rainbow2.shader",
+              "ToolTip": "E:\\UnityProject\\StarBeat\\Assets\\Rainbow\\Rainbow2.shader",
+              "RelativeToolTip": "Assets\\Rainbow\\Rainbow2.shader",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAAFkAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
+              "WhenOpened": "2026-03-18T07:08:10.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "MusicPlayerManager.cs",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\MusicPlayerManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MusicPlayerManager.cs",
@@ -107,79 +199,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PortalCTR.cs",
-              "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\PortalCTR.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PortalCTR.cs",
-              "ToolTip": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\PortalCTR.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PortalCTR.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-16T10:18:21.947Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "HoleShader.shader",
-              "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Shader\\HoleShader.shader",
-              "RelativeDocumentMoniker": "Assets\\Shader\\HoleShader.shader",
-              "ToolTip": "E:\\UnityProject\\StarBeat\\Assets\\Shader\\HoleShader.shader",
-              "RelativeToolTip": "Assets\\Shader\\HoleShader.shader",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
-              "WhenOpened": "2026-03-16T09:23:11.598Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "StencilShader.shader",
-              "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Shader\\StencilShader.shader",
-              "RelativeDocumentMoniker": "Assets\\Shader\\StencilShader.shader",
-              "ToolTip": "E:\\UnityProject\\StarBeat\\Assets\\Shader\\StencilShader.shader",
-              "RelativeToolTip": "Assets\\Shader\\StencilShader.shader",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
-              "WhenOpened": "2026-03-16T09:08:58.79Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "SpaceCalibration.cs",
-              "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\Anchor\\SpaceCalibration.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Anchor\\SpaceCalibration.cs",
-              "ToolTip": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\Anchor\\SpaceCalibration.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Anchor\\SpaceCalibration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAArAAAAAAAAAA==",
+              "Title": "AudioController.cs",
+              "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Sindri Studios\\Music-Beat\\Scripts\\AudioController.cs",
+              "RelativeDocumentMoniker": "Assets\\Sindri Studios\\Music-Beat\\Scripts\\AudioController.cs",
+              "ToolTip": "E:\\UnityProject\\StarBeat\\Assets\\Sindri Studios\\Music-Beat\\Scripts\\AudioController.cs",
+              "RelativeToolTip": "Assets\\Sindri Studios\\Music-Beat\\Scripts\\AudioController.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAowIkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-15T13:13:44.972Z"
+              "WhenOpened": "2026-03-18T13:10:52.671Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AnchorCTR.cs",
-              "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\AnchorCTR.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\AnchorCTR.cs",
-              "ToolTip": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\AnchorCTR.cs",
-              "RelativeToolTip": "Assets\\Scripts\\AnchorCTR.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAGAAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T08:28:32.552Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SpatialAnchors.cs",
-              "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\SpatialAnchors.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\SpatialAnchors.cs",
-              "ToolTip": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\SpatialAnchors.cs",
-              "RelativeToolTip": "Assets\\Scripts\\SpatialAnchors.cs",
-              "ViewState": "AgIAAI0AAAAAAAAAAAAIwJkAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T08:30:28.035Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "StarrySky.shader",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\SKy\\StarrySky.shader",
               "RelativeDocumentMoniker": "Assets\\SKy\\StarrySky.shader",
@@ -191,7 +223,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "RainbowShader.shader",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Rainbow\\RainbowShader.shader",
               "RelativeDocumentMoniker": "Assets\\Rainbow\\RainbowShader.shader",
@@ -203,19 +235,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Rainbow2.shader",
-              "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Rainbow\\Rainbow2.shader",
-              "RelativeDocumentMoniker": "Assets\\Rainbow\\Rainbow2.shader",
-              "ToolTip": "E:\\UnityProject\\StarBeat\\Assets\\Rainbow\\Rainbow2.shader",
-              "RelativeToolTip": "Assets\\Rainbow\\Rainbow2.shader",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAuwDQAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
-              "WhenOpened": "2026-03-18T07:08:10.032Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "UnshObjectBehaviour.cs",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Sindri Studios\\Music-Beat\\Scripts\\UnshObjectBehaviour.cs",
               "RelativeDocumentMoniker": "Assets\\Sindri Studios\\Music-Beat\\Scripts\\UnshObjectBehaviour.cs",
@@ -227,7 +247,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "IAnchorData.cs",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\Anchor\\IAnchorData.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Anchor\\IAnchorData.cs",
@@ -239,7 +259,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "ShapeInfo.cs",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\Anchor\\ShapeInfo.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Anchor\\ShapeInfo.cs",
@@ -251,7 +271,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Lit.shader",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.11\\Shaders\\Lit.shader",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.11\\Shaders\\Lit.shader",
@@ -259,12 +279,11 @@
               "RelativeToolTip": "Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.11\\Shaders\\Lit.shader",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
-              "WhenOpened": "2026-03-14T14:15:24.375Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-14T14:15:24.375Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "SeeThroughManager.cs",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\SeeThroughManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SeeThroughManager.cs",
@@ -276,7 +295,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "LookAtCamera.cs",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\LookAtCamera.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\LookAtCamera.cs",

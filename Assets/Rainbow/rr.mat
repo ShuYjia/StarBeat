@@ -27,18 +27,18 @@ Material:
     m_Floats:
     - _Alpha: 1
     - _BandWidth: 0.03
-    - _Brightness: 1.6
+    - _Brightness: 1.34
     - _EdgeSoftness: 0.008
     - _EmissionIntensity: 2.2
     - _FresnelIntensity: 0.5
     - _FresnelPower: 2.2
     - _Gap: 0.01
-    - _Radius: 0.25
-    - _Saturation: 1.6
-    - _SideFade: 0.5
-    - _ThicknessFade: 0.3
+    - _Radius: 0.215
+    - _Saturation: 1.41
+    - _SideFade: 0.164
+    - _ThicknessFade: 0.365
     - _ToneMapExposure: 1
-    - _Width: 0.15
+    - _Width: 0.29
     m_Colors:
     - _Center: {r: 0.5, g: 0.5, b: 0, a: 0}
     - _Color0: {r: 1, g: 0, b: 0, a: 1}
