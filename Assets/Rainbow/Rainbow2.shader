@@ -16,6 +16,9 @@ Shader "Custom/Rainbow_Cinematic_Uniform"
         _SideFade("Side Fade Smoothness", Range(0, 1)) = 0.4
         _ThicknessFade("Thickness Smoothness", Range(0, 1)) = 0.25
         _Alpha("Global Alpha", Range(0, 1)) = 0.8
+         _Stencil ("Stencil ID", Float) = 0
+         _StencilComp ("Stencil Comparison", Float) = 3 // 8 ÊÇ Always (Ä¬ÈÏÈ«ÏÔ)
+         _StencilOp ("Stencil Operation", Float) = 0
     }
 
     SubShader
@@ -26,6 +29,14 @@ Shader "Custom/Rainbow_Cinematic_Uniform"
         ZWrite Off
         Blend SrcAlpha OneMinusSrcAlpha
 
+
+
+        //         Stencil
+        // {
+        //     Ref 2
+        //     Comp Equal
+        //     Pass Keep
+        // }
         Pass
         {
             HLSLPROGRAM

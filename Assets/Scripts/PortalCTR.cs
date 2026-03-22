@@ -10,6 +10,9 @@ public enum PortealDisplayType
 
 public class PortalCTR : MonoBehaviour
 {
+    public bool isVR=false;
+    [Tooltip("处理彩虹显示bug")]
+    public GameObject rainBow;
     public bool tdebug=true;
     public GameObject[] portealDisplay;//传送门显示画面 0 是传送门内容 1是现实透视内容
     public GameObject child; //传送门子物体
@@ -26,6 +29,13 @@ public class PortalCTR : MonoBehaviour
     {
         Init();
 
+    }
+    public void changeRainbowShow(bool v)
+    {
+        if (rainBow != null)
+        {
+            rainBow.SetActive(v);
+        }
     }
     void Init()
     {
@@ -67,11 +77,21 @@ public class PortalCTR : MonoBehaviour
                 SetPlayShowPortealDisplay(isEnterVR ? 1 : 0);
                 ChangeScenesModelLayer(isEnterVR);
                 nextShow = isEnterVR ? PortealDisplayType.VST : PortealDisplayType.VR; //切换下一个要进入时的传送门类型
-
-       //     }
-         //   else//返回
-          //  {
-               Debug.Log("123asasdasdfg");
+            if (isVR)
+            {
+                isVR = false;
+                Debug.Log("fgd");
+            }
+            else
+            {
+                isVR = true;
+                Debug.Log("12d");
+            }
+            changeRainbowShow(isVR);
+            //     }
+            //   else//返回
+            //  {
+            Debug.Log("123asasdasdfg");
         //   }
 
         }
@@ -87,6 +107,8 @@ public class PortalCTR : MonoBehaviour
             {
                 item.gameObject.layer = 0;
             }
+            //changeRainbowShow(false);
+            //Debug.Log("asd");
         }
         else
         {
@@ -94,6 +116,8 @@ public class PortalCTR : MonoBehaviour
             {
                 item.gameObject.layer = scenesModellayer;
             }
+            //changeRainbowShow(true);
+            //Debug.Log("jkl");
         }
 
     }
