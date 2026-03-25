@@ -3,7 +3,7 @@
     "m_SelectedProcess": {
         "deviceId": "PA9410MGK1030288G",
         "name": "com.StarBeat.StarBeat",
-        "processId": 18630,
+        "processId": 24853,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -11,73 +11,49 @@
         {
             "deviceId": "PA9410MGK1030288G",
             "name": "com.StarBeat.StarBeat",
-            "processId": 9204,
+            "processId": 15673,
             "exited": true
         },
         {
             "deviceId": "PA9410MGK1030288G",
             "name": "com.StarBeat.StarBeat",
-            "processId": 10283,
+            "processId": 14938,
             "exited": true
         },
         {
             "deviceId": "PA9410MGK1030288G",
             "name": "com.StarBeat.StarBeat",
-            "processId": 24619,
+            "processId": 16741,
             "exited": true
         },
         {
             "deviceId": "PA9410MGK1030288G",
             "name": "com.StarBeat.StarBeat",
-            "processId": 24969,
+            "processId": 18630,
             "exited": true
         },
         {
             "deviceId": "PA9410MGK1030288G",
             "name": "com.StarBeat.StarBeat",
-            "processId": 27343,
+            "processId": 26374,
             "exited": false
         },
         {
             "deviceId": "PA9410MGK1030288G",
             "name": "com.StarBeat.StarBeat",
-            "processId": 28240,
+            "processId": 26863,
             "exited": false
         },
         {
             "deviceId": "PA9410MGK1030288G",
             "name": "com.StarBeat.StarBeat",
-            "processId": 28851,
+            "processId": 6072,
             "exited": false
         },
         {
             "deviceId": "PA9410MGK1030288G",
             "name": "com.StarBeat.StarBeat",
-            "processId": 29365,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 30871,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 994,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 5914,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 9602,
+            "processId": 8503,
             "exited": false
         },
         {
@@ -89,445 +65,85 @@
         {
             "deviceId": "PA9410MGK1030288G",
             "name": "com.StarBeat.StarBeat",
-            "processId": 9886,
+            "processId": 10518,
             "exited": false
         },
         {
             "deviceId": "PA9410MGK1030288G",
             "name": "com.StarBeat.StarBeat",
-            "processId": 13348,
+            "processId": 11145,
             "exited": false
         },
         {
             "deviceId": "PA9410MGK1030288G",
             "name": "com.StarBeat.StarBeat",
-            "processId": 15732,
+            "processId": 13400,
             "exited": false
         },
         {
             "deviceId": "PA9410MGK1030288G",
             "name": "com.StarBeat.StarBeat",
-            "processId": 17019,
+            "processId": 13950,
             "exited": false
         },
         {
             "deviceId": "PA9410MGK1030288G",
             "name": "com.StarBeat.StarBeat",
-            "processId": 17956,
+            "processId": 15165,
             "exited": false
         },
         {
             "deviceId": "PA9410MGK1030288G",
             "name": "com.StarBeat.StarBeat",
-            "processId": 20924,
+            "processId": 16974,
             "exited": false
         },
         {
             "deviceId": "PA9410MGK1030288G",
             "name": "com.StarBeat.StarBeat",
-            "processId": 19216,
+            "processId": 16465,
             "exited": false
         },
         {
             "deviceId": "PA9410MGK1030288G",
             "name": "com.StarBeat.StarBeat",
-            "processId": 20225,
+            "processId": 15947,
             "exited": false
         },
         {
             "deviceId": "PA9410MGK1030288G",
             "name": "com.StarBeat.StarBeat",
-            "processId": 23787,
+            "processId": 22065,
             "exited": false
         },
         {
             "deviceId": "PA9410MGK1030288G",
             "name": "com.StarBeat.StarBeat",
-            "processId": 21950,
+            "processId": 22245,
             "exited": false
         },
         {
             "deviceId": "PA9410MGK1030288G",
             "name": "com.StarBeat.StarBeat",
-            "processId": 2453,
+            "processId": 22820,
             "exited": false
         },
         {
             "deviceId": "PA9410MGK1030288G",
             "name": "com.StarBeat.StarBeat",
-            "processId": 7814,
+            "processId": 23710,
             "exited": false
         },
         {
             "deviceId": "PA9410MGK1030288G",
             "name": "com.StarBeat.StarBeat",
-            "processId": 12011,
+            "processId": 24359,
             "exited": false
         },
         {
             "deviceId": "PA9410MGK1030288G",
             "name": "com.StarBeat.StarBeat",
-            "processId": 12633,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 13718,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 14061,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 17102,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 18812,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 20410,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 22340,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 23472,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 24742,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 25352,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 26249,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 25736,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 29340,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 27021,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 31554,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 1708,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 32510,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 4127,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 6919,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 12020,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 6001,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 5204,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 14144,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 16480,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 17264,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 18266,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 18982,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 19844,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 21290,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 28449,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 30021,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 7822,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 9594,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 4541,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 7586,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 5535,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 8765,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 9321,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 6874,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 10185,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 16411,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 16850,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 19744,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 20439,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 17343,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 20966,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 22897,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 22312,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 23614,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 21730,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 26001,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 7986,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 8883,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 9272,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 10694,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 13108,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 16133,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 15673,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 14938,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 16741,
-            "exited": false
-        },
-        {
-            "deviceId": "PA9410MGK1030288G",
-            "name": "com.StarBeat.StarBeat",
-            "processId": 18630,
+            "processId": 24853,
             "exited": false
         }
     ],

@@ -10,7 +10,10 @@ EditorBuildSettings:
     guid: 600e1b8dd8f53574b8ca6bc613b17038
   - enabled: 0
     path: Assets/Scenes/Star1.unity
-    guid: 40e0f3d913622c54e88341b712ce43fa
+    guid: a293944ad8dff8d46b515154ff43bb91
+  - enabled: 0
+    path: Assets/Samples/XR Interaction Toolkit/2.6.3/Starter Assets/DemoScene.unity
+    guid: 319dafa5c80f29f428dc1e0d03f04177
   m_configObjects:
     Unity.XR.PXR.Settings: {fileID: 11400000, guid: c2f2ffc1ec2cfa2489f2362a904d1223,
       type: 2}

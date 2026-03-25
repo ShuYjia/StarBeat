@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripts\Anchor\ShapeInfo.cs" />
     <Compile Include="Assets\Scripts\LookAtCamera.cs" />
     <Compile Include="Assets\Scripts\Anchor\IAnchorData.cs" />
+    <Compile Include="Assets\Scripts\test.cs" />
     <Compile Include="Assets\My\MusicVisualizer.cs" />
     <Compile Include="Assets\Scripts\PortalCTR.cs" />
     <Compile Include="Assets\Sindri Studios\Music-Beat\Scripts\AudioReactor.cs" />
