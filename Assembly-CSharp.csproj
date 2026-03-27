@@ -79,6 +79,7 @@
     <Compile Include="Assets\My\MusicVisualizer.cs" />
     <Compile Include="Assets\Scripts\PortalCTR.cs" />
     <Compile Include="Assets\Sindri Studios\Music-Beat\Scripts\AudioReactor.cs" />
+    <Compile Include="Assets\Scripts\ShowPortal.cs" />
     <Compile Include="Assets\Scripts\Anchor\AnchorData.cs" />
     <Compile Include="Assets\My\AudioFlowParticle.cs" />
     <Compile Include="Assets\Sindri Studios\Music-Beat\Scripts\ShObjectBehaviour.cs" />

@@ -40,7 +40,7 @@ public class SpatialAnchor : MonoBehaviour
             anchorPreviewArr[i].gameObject.SetActive(i==index);
     }
 
-    private bool IsCreateAnchor = false;
+    public bool IsCreateAnchor = false;
     public Button CreateAnchorBtn;
     public Button LoadAnchorBtn;
     public Button ClearAnchorBtn;
