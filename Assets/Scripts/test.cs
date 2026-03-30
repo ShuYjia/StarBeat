@@ -14,6 +14,6 @@ public class test : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log(test1.transform.position);
+        Debug.Log(test1.transform.position);
     }
 }
