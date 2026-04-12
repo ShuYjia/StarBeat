@@ -541,7 +541,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 456861503}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1645015c860115548a3fc93bef5884e8, type: 3}
   m_Name: 
@@ -1390,6 +1390,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a70f91c2ee5ca8e428d82ba93f29d931, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isVR: 0
+  rainBow: {fileID: 0}
   tdebug: 1
   portealDisplay:
   - {fileID: 215388100}
@@ -1753,6 +1755,7 @@ MonoBehaviour:
     type: 3}
   RightPushRight: {fileID: 5683167133191601337, guid: c348712bda248c246b8c49b3db54643f,
     type: 3}
+  IsCreateAnchor: 0
   CreateAnchorBtn: {fileID: 2058977821}
   LoadAnchorBtn: {fileID: 561561312}
   ClearAnchorBtn: {fileID: 576740479}

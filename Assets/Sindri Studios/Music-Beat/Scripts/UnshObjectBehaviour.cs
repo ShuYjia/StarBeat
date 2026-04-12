@@ -23,6 +23,7 @@ public class UnshObjectBehaviour : MonoBehaviour
     private float changeFactor;
 
     //Scale
+    public float scaleSmoothSpeed = 10f;
     public bool X;
     public bool Y;
     public bool Z;
@@ -199,10 +200,20 @@ public class UnshObjectBehaviour : MonoBehaviour
 
     private void transformObject()
     {
-        //Transform the scale of the object on the selected axis (X,Y,Z)
-        if(audioController.audioBandBuffer[bandFrequency] >0)
-            transform.localScale = new Vector3((changeFactor * scaleMultiplier * sX) + startScale.x, (changeFactor * scaleMultiplier * sY) + startScale.y, (changeFactor * scaleMultiplier * sZ) + startScale.z);
-        
+        // 1. 先计算出根据当前音频跳动应该达到的“目标大小”
+        Vector3 targetScale = startScale;
+
+        if (audioController.audioBandBuffer[bandFrequency] > 0)
+        {
+            targetScale = new Vector3(
+                (changeFactor * scaleMultiplier * sX) + startScale.x,
+                (changeFactor * scaleMultiplier * sY) + startScale.y,
+                (changeFactor * scaleMultiplier * sZ) + startScale.z
+            );
+        }
+
+        // 2. 使用 Lerp (线性插值) 让当前的 localScale 平滑地过渡到 targetScale
+        transform.localScale = Vector3.Lerp(transform.localScale, targetScale, Time.deltaTime * scaleSmoothSpeed);
     }
 
     private void rotationControl()

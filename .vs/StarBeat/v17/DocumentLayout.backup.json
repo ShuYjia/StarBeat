@@ -108,7 +108,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\test.cs",
               "ToolTip": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\test.cs",
               "RelativeToolTip": "Assets\\Scripts\\test.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-25T10:12:00.999Z",
               "EditorCaption": ""
@@ -219,8 +219,7 @@
               "RelativeToolTip": "Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.11\\Shaders\\Particles\\ParticlesSimpleLit.shader",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
-              "WhenOpened": "2026-03-23T06:34:59.242Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-23T06:34:59.242Z"
             },
             {
               "$type": "Document",
