@@ -8,6 +8,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 865643937088523700, guid: 3ea57e1ca1ec1d04787b1c24c411aa0f,
+        type: 3}
+      propertyPath: m_Mesh3
+      value: 
+      objectReference: {fileID: -3829669968941315533, guid: ac58cd094de333846be259cae6aa17fd,
+        type: 3}
     - target: {fileID: 4182299085062354589, guid: 3ea57e1ca1ec1d04787b1c24c411aa0f,
         type: 3}
       propertyPath: ShapeModule.m_Scale.x
