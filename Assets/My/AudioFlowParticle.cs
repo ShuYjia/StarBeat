@@ -1,62 +1,388 @@
 using UnityEngine;
 
 [RequireComponent(typeof(ParticleSystem))]
+[RequireComponent(typeof(ParticleSystemRenderer))]
 public class AudioFlowParticle : MonoBehaviour
 {
-    [Header("°ó¶¨ÎÒÃÇÖ®Ç°µÄÒôÆµ¿ØÖÆÆ÷")]
-    public AudioController audioController;
-
-    [Header("ÑÕÉ«½¥±ä´ø")]
-    public Gradient audioColorGradient;
-
-    [Header("Æ½»¬ÓëÇ¿¶È¿ØÖÆ (ºËĞÄĞÂÔö)")]
-    [Range(1f, 20f)]
-    [Tooltip("ÖµÔ½Ğ¡£¬±ä»¯Ô½Æ½»¬¡¢¹ı¶ÉÔ½ÈáºÍ£»ÖµÔ½´ó£¬±ä»¯Ô½ÁéÃô¡¢¾çÁÒ¡£")]
-    public float smoothSpeed = 8f; 
-
-    [Range(0f, 2f)]
-    [Tooltip("ÕûÌåĞ§¹ûµÄËõ·Å±¶Êı¡£Èç¹û¾õµÃÕûÌåÌø¶¯µÃÌ«¿äÕÅ£¬¿ÉÒÔµ÷Ğ¡Õâ¸öÖµ£¨Èç0.5£©¡£")]
-    public float reactionIntensity = 1f;
-
-    // ÄÚ²¿ÒıÓÃ
-    private ParticleSystem ps;
-    private ParticleSystem.MainModule mainModule;
-    private ParticleSystem.NoiseModule noiseModule;
-
-    // ĞÂÔö£ºÓÃÓÚ¼ÇÂ¼ÉÏÒ»Ö¡µÄ¡°Æ½»¬½á¹û¡±£¬ÈÃÊıÖµ²»»áË²¼äÌøÔ¾
-    private float smoothedAmplitude = 0f;
-
-    void Start()
+    public enum DepthLayerPreset
     {
-        ps = GetComponent<ParticleSystem>();
-        mainModule = ps.main;
-        noiseModule = ps.noise; // »ñÈ¡Á÷³¡Ä£¿é
+        Custom,
+        Foreground,
+        Background
     }
 
-    void Update()
+    public AudioController audioController;
+    public Gradient audioColorGradient;
+
+    [Range(1f, 20f)]
+    public float smoothSpeed = 8f;
+
+    [Range(0f, 2f)]
+    public float reactionIntensity = 1f;
+
+    // å…¼å®¹åœºæ™¯é‡Œå·²ç»å­˜åœ¨çš„æ—§è°ƒå‚å­—æ®µï¼Œé¿å…è„šæœ¬å‡çº§åä¸¢å¤±åŸæœ‰æ•ˆæœã€‚
+    public float noiseStrengthIntensity = 1.76f;
+    public float simulationSpeedIntensity = 0.57f;
+    public float limitMaxSize = 0f;
+
+    [Header("Depth Layer")]
+    public DepthLayerPreset depthLayerPreset = DepthLayerPreset.Custom;
+
+    [Header("Band Response")]
+    [Range(0, 15)] public int bassStartBand = 0;
+    [Range(0, 15)] public int bassEndBand = 1;
+    [Range(0, 15)] public int midStartBand = 2;
+    [Range(0, 15)] public int midEndBand = 7;
+    [Range(0, 15)] public int trebleStartBand = 8;
+    [Range(0, 15)] public int trebleEndBand = 15;
+    public float bassSizeBoost = 2.2f;
+    public float bassRadialForce = 16f;
+    public float midNoiseBoost = 1.05f;
+    public float midSwirlForce = 12f;
+    public float trebleFrequencyBoost = 1.15f;
+    public float trebleShimmer = 0.35f;
+    public float verticalLift = 2f;
+
+    [Header("Beat Pulse")]
+    [Range(0f, 1f)] public float beatThreshold = 0.5f;
+    public float beatPulseStrength = 0.95f;
+    public float beatPulseDecay = 2.8f;
+
+    [Header("Beat Flash / Ripple")]
+    public float beatFlashStrength = 1f;
+    public float rippleSpeed = 15f;
+    public float rippleWidth = 3f;
+    public float rippleForce = 20f;
+    public float rippleColorBoost = 0.5f;
+
+    [Header("Color Accents")]
+    public Color bassAccentColor = new Color(1f, 0.45f, 0.18f, 1f);
+    public Color midAccentColor = new Color(0.15f, 1f, 0.82f, 1f);
+    public Color trebleAccentColor = new Color(0.75f, 0.45f, 1f, 1f);
+
+    [Header("MR / VR Adaptation")]
+    public bool adaptForSeeThrough = true;
+    [Range(0.2f, 1f)] public float seeThroughAlpha = 0.72f;
+    [Range(0.8f, 1.5f)] public float seeThroughSizeMultiplier = 0.92f;
+    [Range(0.8f, 1.5f)] public float seeThroughBrightness = 1.08f;
+    public int vrMaxLights = 48;
+    public int seeThroughMaxLights = 24;
+
+    [Header("Particle Motion")]
+    [Range(0.8f, 0.999f)] public float particleDamping = 0.988f;
+    public float depthDistance = 22f;
+
+    private ParticleSystem particleSystemComponent;
+    private ParticleSystem.MainModule mainModule;
+    private ParticleSystem.EmissionModule emissionModule;
+    private ParticleSystem.NoiseModule noiseModule;
+    private ParticleSystem.LightsModule lightsModule;
+    private ParticleSystemRenderer particleRenderer;
+    private ParticleSystem.Particle[] particles;
+
+    private float baseStartSize;
+    private float baseSimulationSpeed;
+    private float baseEmissionRate;
+    private float baseNoiseStrength;
+    private float baseNoiseFrequency;
+    private float baseMaxParticleSize;
+    private int baseMaxLights;
+    private bool hasLightsModule;
+
+    private float smoothedBass;
+    private float smoothedMid;
+    private float smoothedTreble;
+    private float smoothedAmplitude;
+    private float beatPulse;
+    private float previousBass;
+    private bool rippleActive;
+    private float rippleRadius;
+
+    private float layerSizeScale = 1f;
+    private float layerEmissionScale = 1f;
+    private float layerVelocityScale = 1f;
+    private float layerBrightnessScale = 1f;
+    private float layerRippleScale = 1f;
+    private float layerAlphaScale = 1f;
+    private float layerNoiseScale = 1f;
+
+    private void Start()
     {
-        if (audioController == null) return;
+        particleSystemComponent = GetComponent<ParticleSystem>();
+        mainModule = particleSystemComponent.main;
+        emissionModule = particleSystemComponent.emission;
+        noiseModule = particleSystemComponent.noise;
+        lightsModule = particleSystemComponent.lights;
+        particleRenderer = GetComponent<ParticleSystemRenderer>();
 
-        // 1. »ñÈ¡µ±Ç°Ö¡µÄ¡°ÕæÊµÄ¿±êÕñ·ù¡±
-        float targetAmplitude = 0;
-        for (int i = 0; i < 8; i++)
+        particles = new ParticleSystem.Particle[Mathf.Max(1, mainModule.maxParticles)];
+
+        // è®°å½•ç²’å­ç³»ç»Ÿçš„åŸºç¡€å€¼ï¼Œåç»­æ‰€æœ‰éŸ³ä¹å“åº”éƒ½åœ¨è¿™ä¸ªåŸºç¡€ä¸Šå åŠ ã€‚
+        baseStartSize = mainModule.startSizeMultiplier;
+        baseSimulationSpeed = mainModule.simulationSpeed;
+        baseEmissionRate = emissionModule.rateOverTimeMultiplier;
+        baseNoiseStrength = noiseModule.strengthMultiplier;
+        baseNoiseFrequency = noiseModule.frequency;
+        baseMaxParticleSize = particleRenderer.maxParticleSize;
+        hasLightsModule = lightsModule.enabled;
+        baseMaxLights = hasLightsModule ? lightsModule.maxLights : 0;
+
+        ApplyDepthLayerPreset();
+    }
+
+    private void ApplyDepthLayerPreset()
+    {
+        // é€šè¿‡è¿‘æ™¯/è¿œæ™¯é¢„è®¾ï¼Œè®©ç°æœ‰ä¸¤ä¸ªå®ä¾‹å½¢æˆæ˜æ˜¾æ™¯æ·±ï¼Œè€Œç²’å­ç¾¤å†…éƒ¨ç»§ç»­æ‰¿æ‹…ä¸­æ™¯è¿‡æ¸¡ã€‚
+        switch (depthLayerPreset)
         {
-            targetAmplitude += audioController.audioBandBuffer[i];
+            case DepthLayerPreset.Foreground:
+                layerSizeScale = 1.25f;
+                layerEmissionScale = 1.15f;
+                layerVelocityScale = 1.18f;
+                layerBrightnessScale = 1.12f;
+                layerRippleScale = 1.18f;
+                layerAlphaScale = 1f;
+                layerNoiseScale = 1.05f;
+                break;
+            case DepthLayerPreset.Background:
+                layerSizeScale = 0.72f;
+                layerEmissionScale = 0.8f;
+                layerVelocityScale = 0.74f;
+                layerBrightnessScale = 0.82f;
+                layerRippleScale = 0.65f;
+                layerAlphaScale = 0.78f;
+                layerNoiseScale = 0.78f;
+                break;
+            default:
+                layerSizeScale = 1f;
+                layerEmissionScale = 1f;
+                layerVelocityScale = 1f;
+                layerBrightnessScale = 1f;
+                layerRippleScale = 1f;
+                layerAlphaScale = 1f;
+                layerNoiseScale = 1f;
+                break;
         }
-        
-        // ¼ÆËã³öÆ½¾ùÖµ£¬²¢³ËÒÔÎÒÃÇÔÚÃæ°åÀïÉèÖÃµÄ·´Ó¦Ç¿¶È
-        targetAmplitude = (targetAmplitude / 8f) * reactionIntensity; 
+    }
 
-        // 2. ºËĞÄÆ½»¬Ëã·¨£ºMathf.Lerp
-        // ËüµÄ×÷ÓÃÊÇ£ºÈÃ smoothedAmplitude Æ½»¬µØÏò targetAmplitude ¿¿½ü£¬¶ø²»ÊÇË²¼äµÈÓÚËü¡£
-        smoothedAmplitude = Mathf.Lerp(smoothedAmplitude, targetAmplitude, Time.deltaTime * smoothSpeed);
+    private void Update()
+    {
+        if (audioController == null)
+        {
+            return;
+        }
 
-        // 3. ½«Ô­±¾Ö±½ÓÊ¹ÓÃÄ¿±êÖµµÄ´úÂë£¬È«²¿Ìæ»»ÎªÊ¹ÓÃ¡°Æ½»¬ºóµÄÖµ (smoothedAmplitude)¡±
-        mainModule.startSizeMultiplier = 1f + (smoothedAmplitude * 2f);
-        mainModule.simulationSpeed = 1f + (smoothedAmplitude * 4f);
-        noiseModule.strengthMultiplier = 1f + (smoothedAmplitude * 3f);
-        
-        // ÑÕÉ«Ò²Ê¹ÓÃÆ½»¬ºóµÄÖµÀ´»ñÈ¡
-        mainModule.startColor = audioColorGradient.Evaluate(smoothedAmplitude);
+        // ä½é¢‘è´Ÿè´£â€œå†²å‡»æ„Ÿâ€ï¼Œä¸­é¢‘è´Ÿè´£â€œæµåŠ¨æ„Ÿâ€ï¼Œé«˜é¢‘è´Ÿè´£â€œé—ªçƒæ„Ÿâ€ã€‚
+        float rawBass = GetBandAverage(bassStartBand, bassEndBand);
+        float rawMid = GetBandAverage(midStartBand, midEndBand);
+        float rawTreble = GetBandAverage(trebleStartBand, trebleEndBand);
+
+        smoothedBass = SmoothBand(smoothedBass, rawBass, smoothSpeed * 1.2f);
+        smoothedMid = SmoothBand(smoothedMid, rawMid, smoothSpeed * 0.9f);
+        smoothedTreble = SmoothBand(smoothedTreble, rawTreble, smoothSpeed * 1.5f);
+
+        float weightedAmplitude = (smoothedBass * 0.45f) + (smoothedMid * 0.35f) + (smoothedTreble * 0.2f);
+        smoothedAmplitude = SmoothBand(smoothedAmplitude, weightedAmplitude * reactionIntensity, smoothSpeed);
+
+        UpdateBeatPulse();
+        UpdateRippleWave();
+
+        bool seeThroughEnabled = adaptForSeeThrough && SeeThroughManager.IsSeeThroughEnabled;
+        Color globalColor = BuildGlobalColor(seeThroughEnabled);
+
+        ApplyModuleSettings(globalColor, seeThroughEnabled);
+        ApplyParticleField(globalColor);
+    }
+
+    private float GetBandAverage(int startBand, int endBand)
+    {
+        float[] bands = audioController.audioBandBuffer;
+        if (bands == null || bands.Length == 0)
+        {
+            return 0f;
+        }
+
+        int start = Mathf.Clamp(Mathf.Min(startBand, endBand), 0, bands.Length - 1);
+        int end = Mathf.Clamp(Mathf.Max(startBand, endBand), 0, bands.Length - 1);
+
+        float total = 0f;
+        int count = 0;
+        for (int i = start; i <= end; i++)
+        {
+            total += bands[i];
+            count++;
+        }
+
+        return count > 0 ? total / count : 0f;
+    }
+
+    private float SmoothBand(float current, float target, float speed)
+    {
+        return Mathf.Lerp(current, target, Time.deltaTime * Mathf.Max(0.01f, speed));
+    }
+
+    private void UpdateBeatPulse()
+    {
+        // ä½¿ç”¨ä½é¢‘ä¸Šå‡æ²¿æ¥è¿‘ä¼¼æ£€æµ‹é¼“ç‚¹ï¼Œè®©èŠ‚æ‹æ—¶å‡ºç°æ˜ç¡®çš„é—ªçˆ†åé¦ˆã€‚
+        bool beatTriggered = smoothedBass > beatThreshold && smoothedBass > previousBass + 0.02f;
+        if (beatTriggered)
+        {
+            beatPulse = 1f;
+            rippleActive = true;
+            rippleRadius = 0f;
+        }
+
+        beatPulse = Mathf.Max(0f, beatPulse - (Time.deltaTime * beatPulseDecay));
+        previousBass = smoothedBass;
+    }
+
+    private void UpdateRippleWave()
+    {
+        if (!rippleActive)
+        {
+            return;
+        }
+
+        rippleRadius += Time.deltaTime * rippleSpeed * layerVelocityScale;
+        if (rippleRadius > depthDistance + rippleWidth)
+        {
+            rippleActive = false;
+        }
+    }
+
+    private Color BuildGlobalColor(bool seeThroughEnabled)
+    {
+        // é¢œè‰²å¹¶ä¸åªè·ŸéŸ³é‡ç»‘å®šï¼Œè¿˜ä¼šéšç€æ—¶é—´å’Œé«˜é¢‘è½»å¾®æµåŠ¨ï¼Œé¿å…ç”»é¢â€œæ­»è‰²â€ã€‚
+        float colorTime = Mathf.Repeat(Time.time * (0.05f + (smoothedTreble * 0.2f)), 1f);
+        float gradientPosition = Mathf.Clamp01((smoothedAmplitude * 0.55f) + (smoothedMid * 0.2f) + (colorTime * 0.25f));
+
+        Color color = audioColorGradient.Evaluate(gradientPosition);
+        color = Color.Lerp(color, bassAccentColor, (smoothedBass * 0.35f) + (beatPulse * 0.2f));
+        color = Color.Lerp(color, midAccentColor, smoothedMid * 0.3f);
+        color = Color.Lerp(color, trebleAccentColor, smoothedTreble * 0.35f);
+
+        float brightness = (0.85f + (smoothedTreble * trebleShimmer) + (beatPulse * beatFlashStrength)) * layerBrightnessScale;
+        if (seeThroughEnabled)
+        {
+            brightness *= seeThroughBrightness;
+        }
+
+        color = MultiplyColor(color, brightness);
+        color.a = Mathf.Clamp01((0.55f + (smoothedAmplitude * 0.22f) + (beatPulse * 0.22f)) * layerAlphaScale);
+
+        if (seeThroughEnabled)
+        {
+            color.a *= seeThroughAlpha;
+        }
+
+        return color;
+    }
+
+    private void ApplyModuleSettings(Color globalColor, bool seeThroughEnabled)
+    {
+        // æ¨¡å—çº§è°ƒå‚å†³å®šæ•´ä½“æ°”åŠ¿ï¼šå°ºå¯¸ã€é€Ÿåº¦ã€å¯†åº¦ã€å™ªå£°ä¸€èµ·å“åº”éŸ³ä¹ã€‚
+        float sizeMultiplier = (1f + (smoothedAmplitude * bassSizeBoost) + (beatPulse * beatPulseStrength)) * layerSizeScale;
+        if (seeThroughEnabled)
+        {
+            sizeMultiplier *= seeThroughSizeMultiplier;
+        }
+
+        if (limitMaxSize > 0f)
+        {
+            sizeMultiplier = Mathf.Min(sizeMultiplier, limitMaxSize);
+        }
+
+        mainModule.startSizeMultiplier = baseStartSize * sizeMultiplier;
+        mainModule.simulationSpeed = baseSimulationSpeed * (1f + (smoothedAmplitude * simulationSpeedIntensity) + (smoothedBass * 0.5f) + (smoothedTreble * 0.35f) + (beatPulse * 0.35f)) * layerVelocityScale;
+        mainModule.startColor = new ParticleSystem.MinMaxGradient(globalColor);
+
+        emissionModule.rateOverTimeMultiplier = baseEmissionRate * (1f + (smoothedAmplitude * 1.2f) + (smoothedBass * 1f) + (beatPulse * 1.6f)) * layerEmissionScale;
+
+        noiseModule.strengthMultiplier = baseNoiseStrength * (1f + (smoothedAmplitude * noiseStrengthIntensity) + (smoothedMid * midNoiseBoost) + (beatPulse * 0.25f)) * layerNoiseScale;
+        noiseModule.frequency = baseNoiseFrequency + (smoothedTreble * trebleFrequencyBoost) + (smoothedMid * 0.25f * layerNoiseScale);
+
+        float targetMaxParticleSize = baseMaxParticleSize + (smoothedBass * 0.08f * layerSizeScale) + (beatPulse * 0.06f * layerSizeScale);
+        if (limitMaxSize > 0f)
+        {
+            targetMaxParticleSize = Mathf.Min(targetMaxParticleSize, limitMaxSize);
+        }
+        particleRenderer.maxParticleSize = Mathf.Max(baseMaxParticleSize, targetMaxParticleSize);
+
+        if (hasLightsModule)
+        {
+            int lightCap = seeThroughEnabled ? seeThroughMaxLights : vrMaxLights;
+            int scaledLightCap = Mathf.Max(1, Mathf.RoundToInt(lightCap * layerEmissionScale));
+            int sourceCap = baseMaxLights > 0 ? baseMaxLights : scaledLightCap;
+            lightsModule.maxLights = Mathf.Clamp(scaledLightCap, 1, sourceCap);
+        }
+    }
+
+    private void ApplyParticleField(Color globalColor)
+    {
+        if (particles == null || particles.Length < mainModule.maxParticles)
+        {
+            particles = new ParticleSystem.Particle[Mathf.Max(1, mainModule.maxParticles)];
+        }
+
+        int aliveCount = particleSystemComponent.GetParticles(particles);
+        if (aliveCount <= 0)
+        {
+            return;
+        }
+
+        float now = Time.time;
+        float safeDepthDistance = Mathf.Max(0.01f, depthDistance);
+        float safeRippleWidth = Mathf.Max(0.01f, rippleWidth);
+
+        for (int i = 0; i < aliveCount; i++)
+        {
+            Vector3 position = particles[i].position;
+            float distance = position.magnitude;
+            float distance01 = Mathf.Clamp01(distance / safeDepthDistance);
+
+            Vector3 radialDirection = distance > 0.0001f ? position / distance : Vector3.up;
+            Vector3 tangentDirection = Vector3.Cross(Vector3.up, radialDirection);
+            if (tangentDirection.sqrMagnitude < 0.0001f)
+            {
+                tangentDirection = Vector3.Cross(Vector3.right, radialDirection);
+            }
+            tangentDirection.Normalize();
+
+            float centerFalloff = 1f - (distance01 * 0.65f);
+            float rippleBand = 0f;
+            if (rippleActive)
+            {
+                // æ³¢çº¹åœˆä¼šä»ä¸­å¿ƒå‘å¤–æ‰«è¿‡ï¼Œç»è¿‡ç²’å­æ—¶ç»™ä¸€æ¬¡é¢å¤–æ¨åŠ›å’Œäº®åº¦æŠ¬å‡ã€‚
+                float distanceToWave = Mathf.Abs(distance - rippleRadius);
+                rippleBand = Mathf.Clamp01(1f - (distanceToWave / safeRippleWidth));
+            }
+
+            Vector3 velocity = particles[i].velocity * particleDamping;
+            velocity += radialDirection * ((smoothedBass * bassRadialForce) + (beatPulse * bassRadialForce * 0.7f) + (rippleBand * rippleForce * layerRippleScale)) * Time.deltaTime * layerVelocityScale;
+            velocity += tangentDirection * (smoothedMid * midSwirlForce * (0.6f + centerFalloff)) * Time.deltaTime * layerVelocityScale;
+            velocity += Vector3.up * ((smoothedTreble * verticalLift) + (smoothedMid * 0.35f) + (rippleBand * verticalLift * 0.25f)) * Time.deltaTime * layerVelocityScale;
+            particles[i].velocity = velocity;
+
+            float flicker = 1f + (Mathf.PingPong((now * (6f + (smoothedTreble * 18f))) + (i * 0.031f), 0.25f) * smoothedTreble);
+            float flashBoost = (beatPulse * beatFlashStrength * 0.35f) + (rippleBand * rippleColorBoost * layerRippleScale);
+
+            Color particleColor = Color.Lerp(globalColor, trebleAccentColor, (distance01 * 0.25f) + (smoothedTreble * 0.2f));
+            particleColor = Color.Lerp(particleColor, bassAccentColor, (beatPulse * 0.12f) + (rippleBand * 0.18f));
+            particleColor = MultiplyColor(particleColor, flicker + flashBoost);
+            particleColor.a *= Mathf.Lerp(1f, 0.72f, distance01 * 0.55f);
+            particleColor.a = Mathf.Clamp01((particleColor.a + (rippleBand * 0.14f)) * layerAlphaScale);
+            particles[i].startColor = particleColor;
+        }
+
+        particleSystemComponent.SetParticles(particles, aliveCount);
+    }
+
+    private Color MultiplyColor(Color color, float multiplier)
+    {
+        // ä¿ç•™ä¸€ç‚¹è¶…è¿‡ 1 çš„é¢œè‰²å¼ºåº¦ï¼Œç»™ Additive ç²’å­æ›´å¤šèˆå°ç¯å…‰æ„Ÿã€‚
+        color.r = Mathf.Clamp(color.r * multiplier, 0f, 1.6f);
+        color.g = Mathf.Clamp(color.g * multiplier, 0f, 1.6f);
+        color.b = Mathf.Clamp(color.b * multiplier, 0f, 1.6f);
+        return color;
     }
 }

@@ -10649,12 +10649,17 @@ PrefabInstance:
     - target: {fileID: 648570481790615388, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 648570481790615388, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
         type: 3}
-      propertyPath: smoothSpeed
-      value: 8.057248
+      propertyPath: depthDistance
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 648570481790615388, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
+        type: 3}
+      propertyPath: depthLayerPreset
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 648570481790615388, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
         type: 3}
@@ -10679,7 +10684,87 @@ PrefabInstance:
     - target: {fileID: 648570481790615388, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
         type: 3}
       propertyPath: simulationSpeedIntensity
-      value: 0.57
+      value: 0.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 648570481790615388, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
+        type: 3}
+      propertyPath: bassSizeBoost
+      value: 2.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 648570481790615388, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
+        type: 3}
+      propertyPath: bassRadialForce
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 648570481790615388, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
+        type: 3}
+      propertyPath: midNoiseBoost
+      value: 1.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 648570481790615388, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
+        type: 3}
+      propertyPath: midSwirlForce
+      value: 13.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 648570481790615388, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
+        type: 3}
+      propertyPath: trebleFrequencyBoost
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 648570481790615388, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
+        type: 3}
+      propertyPath: trebleShimmer
+      value: 0.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 648570481790615388, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
+        type: 3}
+      propertyPath: beatThreshold
+      value: 0.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 648570481790615388, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
+        type: 3}
+      propertyPath: beatPulseStrength
+      value: 1.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 648570481790615388, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
+        type: 3}
+      propertyPath: beatPulseDecay
+      value: 2.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 648570481790615388, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
+        type: 3}
+      propertyPath: beatFlashStrength
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 648570481790615388, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
+        type: 3}
+      propertyPath: rippleSpeed
+      value: 17.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 648570481790615388, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
+        type: 3}
+      propertyPath: rippleWidth
+      value: 3.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 648570481790615388, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
+        type: 3}
+      propertyPath: rippleForce
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 648570481790615388, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
+        type: 3}
+      propertyPath: rippleColorBoost
+      value: 0.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 648570481790615388, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
+        type: 3}
+      propertyPath: verticalLift
+      value: 2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 648570481790615388, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
+        type: 3}
+      propertyPath: depthDistance
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 648570481790615388, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
         type: 3}
@@ -10764,17 +10849,27 @@ PrefabInstance:
     - target: {fileID: 4224567571659170021, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 4224567571659170021, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.5
+      value: -2.2
       objectReference: {fileID: 0}
     - target: {fileID: 4224567571659170021, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 3.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 648570481790615388, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
+        type: 3}
+      propertyPath: depthDistance
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 648570481790615388, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
+        type: 3}
+      propertyPath: depthLayerPreset
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4224567571659170021, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
         type: 3}
@@ -10835,17 +10930,17 @@ PrefabInstance:
     - target: {fileID: 4536482350002429082, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
         type: 3}
       propertyPath: LightsModule.maxLights
-      value: 1000
+      value: 160
       objectReference: {fileID: 0}
     - target: {fileID: 4536482350002429082, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
         type: 3}
       propertyPath: InitialModule.startSize.scalar
-      value: 0.5
+      value: 0.62
       objectReference: {fileID: 0}
     - target: {fileID: 4536482350002429082, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
         type: 3}
       propertyPath: InitialModule.startSize.minScalar
-      value: 0.1
+      value: 0.16
       objectReference: {fileID: 0}
     - target: {fileID: 4536482350002429082, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
         type: 3}
@@ -26938,7 +27033,87 @@ PrefabInstance:
     - target: {fileID: 648570481790615388, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
         type: 3}
       propertyPath: simulationSpeedIntensity
-      value: 0.57
+      value: 0.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 648570481790615388, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
+        type: 3}
+      propertyPath: bassSizeBoost
+      value: 2.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 648570481790615388, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
+        type: 3}
+      propertyPath: bassRadialForce
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 648570481790615388, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
+        type: 3}
+      propertyPath: midNoiseBoost
+      value: 1.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 648570481790615388, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
+        type: 3}
+      propertyPath: midSwirlForce
+      value: 13.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 648570481790615388, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
+        type: 3}
+      propertyPath: trebleFrequencyBoost
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 648570481790615388, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
+        type: 3}
+      propertyPath: trebleShimmer
+      value: 0.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 648570481790615388, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
+        type: 3}
+      propertyPath: beatThreshold
+      value: 0.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 648570481790615388, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
+        type: 3}
+      propertyPath: beatPulseStrength
+      value: 1.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 648570481790615388, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
+        type: 3}
+      propertyPath: beatPulseDecay
+      value: 2.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 648570481790615388, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
+        type: 3}
+      propertyPath: beatFlashStrength
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 648570481790615388, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
+        type: 3}
+      propertyPath: rippleSpeed
+      value: 17.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 648570481790615388, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
+        type: 3}
+      propertyPath: rippleWidth
+      value: 3.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 648570481790615388, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
+        type: 3}
+      propertyPath: rippleForce
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 648570481790615388, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
+        type: 3}
+      propertyPath: rippleColorBoost
+      value: 0.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 648570481790615388, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
+        type: 3}
+      propertyPath: verticalLift
+      value: 2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 648570481790615388, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
+        type: 3}
+      propertyPath: depthDistance
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 648570481790615388, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
         type: 3}
@@ -27023,17 +27198,27 @@ PrefabInstance:
     - target: {fileID: 4224567571659170021, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.2
+      value: -7.6
       objectReference: {fileID: 0}
     - target: {fileID: 4224567571659170021, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.4
       objectReference: {fileID: 0}
     - target: {fileID: 4224567571659170021, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.3
+      value: -15.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 648570481790615388, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
+        type: 3}
+      propertyPath: depthDistance
+      value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 648570481790615388, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
+        type: 3}
+      propertyPath: depthLayerPreset
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4224567571659170021, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
         type: 3}
@@ -27094,17 +27279,17 @@ PrefabInstance:
     - target: {fileID: 4536482350002429082, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
         type: 3}
       propertyPath: LightsModule.maxLights
-      value: 1000
+      value: 160
       objectReference: {fileID: 0}
     - target: {fileID: 4536482350002429082, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
         type: 3}
       propertyPath: InitialModule.startSize.scalar
-      value: 0.5
+      value: 0.62
       objectReference: {fileID: 0}
     - target: {fileID: 4536482350002429082, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
         type: 3}
       propertyPath: InitialModule.startSize.minScalar
-      value: 0.1
+      value: 0.16
       objectReference: {fileID: 0}
     - target: {fileID: 4536482350002429082, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
         type: 3}
