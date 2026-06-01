@@ -10929,7 +10929,17 @@ PrefabInstance:
     - target: {fileID: 4224567571659170021, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.34363
+      value: 0.17504
+      objectReference: {fileID: 0}
+    - target: {fileID: 4224567571659170021, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.17504
+      objectReference: {fileID: 0}
+    - target: {fileID: 4224567571659170021, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.17504
       objectReference: {fileID: 0}
     - target: {fileID: 4224567571659170021, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
         type: 3}
@@ -11009,13 +11019,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4536482350002429082, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
         type: 3}
+      propertyPath: InitialModule.rotation3D
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4536482350002429082, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
+        type: 3}
       propertyPath: InitialModule.startSize.scalar
-      value: 0.5
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 4536482350002429082, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
         type: 3}
       propertyPath: InitialModule.startSize.minScalar
-      value: 0.1
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 4536482350002429082, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
         type: 3}
@@ -11031,6 +11046,11 @@ PrefabInstance:
         type: 3}
       propertyPath: InitialModule.startColor.maxColor.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4536482350002429082, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
+        type: 3}
+      propertyPath: InitialModule.startRotationX.scalar
+      value: -1.5707963
       objectReference: {fileID: 0}
     - target: {fileID: 4536482350002429082, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
         type: 3}
@@ -11095,6 +11115,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RenderMode
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5100502783618569846, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
+        type: 3}
+      propertyPath: m_RenderAlignment
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5100502783618569846, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
+        type: 3}
+      propertyPath: m_EnableGPUInstancing
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5100502783618569846, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
         type: 3}
@@ -19301,27 +19331,28 @@ MonoBehaviour:
   audioController: {fileID: 2130399915}
   attackSpeed: 20.7
   decaySpeed: 2.13
-  minEmission: 18.1
+  minEmission: 10
   maxEmission: 17.9
   overallSpeedMultiplier: 0.4
   emissionRateMultiplier: 1
   maxParticles: 227
-  baseRadius: 0.35
-  maxRadius: 0.9
-  baseParticleSize: 0.12
-  maxParticleSize: 0.09
+  spawnRadius: 0.35
+  spawnHeight: 0.15
+  startSizeRange: {x: 5, y: 10}
+  sizeAudioBoost: 1.2
   baseLifetime: 1.37
   lifetimeBoost: 1.19
   flowDirection: {x: 0, y: 1, z: 0}
   baseRiseSpeed: 1.8
   riseBoost: 8
+  velocityFollowSpeed: 8
   detailSway: 1.4
   baseNoiseStrength: 0.2
   maxNoiseStrength: 1.4
   baseNoiseFrequency: 0.25
   noiseFrequencyBoost: 1.3
-  baseSimulationSpeed: 1
-  simulationSpeedBoost: 1.2
+  baseSimulationSpeed: 0.52
+  simulationSpeedBoost: 0.74
   audioColorGradient:
     serializedVersion: 2
     key0: {r: 1, g: 0, b: 0.89401865, a: 1}
@@ -19352,6 +19383,12 @@ MonoBehaviour:
     m_ColorSpace: -1
     m_NumColorKeys: 7
     m_NumAlphaKeys: 2
+  enableMusicRotation: 1
+  baseRotationSpeed: 30
+  rotationAudioBoost: 360
+  randomRotationFactor: 0.4
+  rotationPulseSpeed: 4
+  rotationPulseAmount: 0.3
 --- !u!1 &1312203316
 GameObject:
   m_ObjectHideFlags: 0
@@ -27307,6 +27344,11 @@ PrefabInstance:
         type: 3}
       propertyPath: reactionIntensity
       value: 1.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 648570481790615388, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
+        type: 3}
+      propertyPath: rotationAudioBoost
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 648570481790615388, guid: 33886ec1e26f6414c8e5e8411a3c5f09,
         type: 3}
