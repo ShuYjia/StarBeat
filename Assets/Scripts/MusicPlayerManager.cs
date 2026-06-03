@@ -10,6 +10,9 @@ public struct Song
     public string songName;
     public Sprite coverImage;
     public AudioClip audioClip;
+
+    [Header("主题颜色渐变")]
+    public Gradient themeGradient; // 在 Inspector 中可以自定义每首歌的颜色主题
 }
 
 public class MusicPlayerManager : MonoBehaviour
@@ -50,8 +53,8 @@ public class MusicPlayerManager : MonoBehaviour
         if (allMusic.Length > 0)
         {
             UpdateSongDisplay();
-            // 初始化时如果还没播放，显示播放图标
-            //pauseBtn.image.sprite = playIcon;
+            // 游戏开始时同步一下第一首歌的颜色主题
+            UpdateParticleSystemGradients();
         }
     }
 
@@ -69,7 +72,6 @@ public class MusicPlayerManager : MonoBehaviour
 
     public void NextSong()
     {
-        // 逻辑：如果当前是最后一首 (Length - 1)，+1 后取模会变成 0，实现回到第一首
         currentIndex = (currentIndex + 1) % allMusic.Length;
         UpdateSongDisplay();
         PlayCurrent();
@@ -78,7 +80,6 @@ public class MusicPlayerManager : MonoBehaviour
     public void PreviousSong()
     {
         currentIndex--;
-        // 逻辑：如果索引小于 0，跳转到最后一首
         if (currentIndex < 0)
         {
             currentIndex = allMusic.Length - 1;
@@ -95,16 +96,15 @@ public class MusicPlayerManager : MonoBehaviour
         {
             source.Pause();
             isPlaying = false;
-            pauseBtn.image.sprite = playIcon; // 暂停后显示“播放”图标
+            pauseBtn.image.sprite = playIcon;
         }
         else
         {
-            // 如果当前没有 Clip（比如刚启动），先指定一下
             if (source.clip == null) PlayCurrent();
             else source.UnPause();
 
             isPlaying = true;
-            pauseBtn.image.sprite = pauseIcon; // 播放时显示“暂停”图标
+            pauseBtn.image.sprite = pauseIcon;
         }
     }
 
@@ -123,6 +123,33 @@ public class MusicPlayerManager : MonoBehaviour
         source.Play();
 
         isPlaying = true;
-        pauseBtn.image.sprite = pauseIcon; // 切换歌曲并播放时，自动更新为“暂停”图标
+        pauseBtn.image.sprite = pauseIcon;
+
+        // 【关键点】切换歌曲时，更新粒子效果的颜色主题
+        UpdateParticleSystemGradients();
+    }
+
+    /// <summary>
+    /// 遍历场景中所有的 AudioFlowParticle 脚本，并同步当前歌曲的渐变色
+    /// </summary>
+    private void UpdateParticleSystemGradients()
+    {
+        if (allMusic.Length == 0) return;
+
+        // 获取当前切到的歌曲的主题颜色
+        Gradient currentGradient = allMusic[currentIndex].themeGradient;
+
+        // 寻找场景中所有激活的 AudioFlowParticle 脚本组件
+        // 注：FindObjectsByType 在较新版 Unity 中性能更好。如果你使用的是 2021 或更老版本，可以改成 FindObjectsOfType<AudioFlowParticle>()
+        AudioFlowParticle[] particlesInScene = FindObjectsByType<AudioFlowParticle>(FindObjectsSortMode.None);
+
+        foreach (AudioFlowParticle particleScript in particlesInScene)
+        {
+            if (particleScript != null)
+            {
+                // 将当前歌曲的颜色赋值给粒子脚本对应的变量
+                particleScript.audioColorGradient = currentGradient;
+            }
+        }
     }
 }

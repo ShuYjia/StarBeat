@@ -1,94 +1,326 @@
-// InstrumentInteractable.cs
 using UnityEngine;
-using System.Collections; // 用于协程动画
+using System.Collections;
 
-[RequireComponent(typeof(BoxCollider))] // 确保物体有 Collider
+[RequireComponent(typeof(BoxCollider))]
 public class InstrumentInteractable : MonoBehaviour
 {
     [Header("声音设置")]
-    public AudioClip instrumentSound; // 在 Inspector 中拖入该位置对应的音效
-   // [Range(0f, 1f)] // 在 Inspector 中创建一个音量滑块
-    public float volumeScale = 1.0f; // 默认音量为 1 (最大)
+    public AudioClip instrumentSound;
+    public float volumeScale = 1f;
 
-    [Header("特效设置")]
-    public GameObject noteParticlePrefab; // 拖入做好的粒子特效预制体
-    public  Vector3 noteOffset = Vector3.zero;
-    [Header("键盘特殊设置")]
-    public bool isKeyboardKey = false; // 如果是键盘按键，勾选此项
-    public float pressDepth = 0.015f;  // 按下去的深度 (Y轴偏移量)
-    public float pressDuration = 0.1f; // 按下去后恢复的时间
+    [Header("随机模型特效")]
+    public GameObject[] effectModelPrefabs;
 
-    private Transform targetTransform; // 需要移动的目标物体
+    [Header("随机颜色")]
+    public Color[] effectColors;
+
+    [Header("生成设置")]
+    public Vector3 spawnOffset;
+
+    [Tooltip("生成范围")]
+    public float spawnRadius = 0.05f;
+
+    [Tooltip("持续时间")]
+    public float effectDuration = 1.5f;
+
+    [Tooltip("上升速度")]
+    public float riseSpeed = 0.4f;
+
+    [Tooltip("初始大小")]
+    public float startScale = 0.08f;
+
+    [Header("钢琴键动画与冷却")]
+    public bool isKeyboardKey = false;
+    public float pressDepth = 0.015f;
+    public float pressDuration = 0.1f;
+
+    [Tooltip("仅在作为钢琴键(isKeyboardKey为true)时生效的触发冷却时间（秒）")]
+    public float keyboardTriggerCooldown = 1.0f; // 可以在 Inspector 中调节
+    private float nextKeyboardTriggerTime = 0f;  // 仅用于钢琴键的时间戳
+
+    private Transform targetTransform;
     private Vector3 originalLocalPos;
     private AudioController audioController;
+    private bool isEffectPlaying = false;
 
-    void Start()
+    private void Start()
     {
-        // 从你的截图来看，脚本挂在一个空物体（GameObject）上，这个空物体是琴键模型的子物体。
-        // 如果是琴键，我们获取脚本所在物体的父物体（即琴键模型）。
         if (isKeyboardKey)
-        {
             targetTransform = transform.parent;
-        }
         else
-        {
             targetTransform = transform;
-        }
 
         if (targetTransform != null)
-        {
-            // 记录目标物体的初始相对位置 (使用 localPosition 防止父物体移动时出错)
             originalLocalPos = targetTransform.localPosition;
-        }
 
-        // 自动在场景中寻找 AudioController
         audioController = FindObjectOfType<AudioController>();
 
-        // 【关键修复】：自动确保 collider 是 trigger，防止忘记勾选
         GetComponent<BoxCollider>().isTrigger = true;
     }
 
-    // 当手柄按下扳机并在此物体内部时，由手柄脚本调用此方法
     public void TriggerInstrument(Vector3 hitPosition)
     {
-        // 1. 播放声音 (传递音量缩放)
+        // === 核心改动：如果是钢琴键，单独进行冷却时间拦截 ===
+        if (isKeyboardKey)
+        {
+            if (Time.time < nextKeyboardTriggerTime)
+            {
+                // 还在冷却中，直接退出，不播声音、不播动画、不生特效
+                return;
+            }
+            // 满足触发条件，更新该钢琴键的下一次允许触发时间
+            nextKeyboardTriggerTime = Time.time + keyboardTriggerCooldown;
+        }
+
+        // 其它非钢琴乐器不受上述时间拦截，直接走原本的特效防重叠逻辑
+        if (isEffectPlaying)
+            return;
+
+        // 执行声音触发
         if (audioController != null && instrumentSound != null)
         {
-            audioController.PlayInstrumentSound(instrumentSound, volumeScale);
+            audioController.PlayInstrumentSound(
+                instrumentSound,
+                volumeScale
+            );
         }
 
-        // 2. 生成粒子特效
-        if (noteParticlePrefab != null)
-        {
-            // 在手柄位置生成粒子
-            //Vector3 spawnPos = hitPosition + Vector3.up * 0.1f; // 向上抬高 0.1 米
-            //Instantiate(noteParticlePrefab, spawnPos, Quaternion.identity);
-           Instantiate(noteParticlePrefab, hitPosition+noteOffset, Quaternion.identity);
-        }
+        // 执行特效生成
+        StartCoroutine(PlaySpawnEffect(hitPosition));
 
-        // 3. 执行键盘按压效果
-        if (isKeyboardKey && targetTransform != null)
+        // 执行按键动画（此时能走到这里的钢琴键必然已经通过了上面的冷却筛选）
+        if (isKeyboardKey)
         {
-            StopAllCoroutines(); // 如果快速连按，先停止上一次的动画
+            StopCoroutine(nameof(AnimateKeyPress));
             StartCoroutine(AnimateKeyPress());
         }
     }
 
-    // 协程：控制目标物体 (琴键模型) 按下再弹起的过程
+    private IEnumerator PlaySpawnEffect(Vector3 hitPosition)
+    {
+        isEffectPlaying = true;
+
+        if (effectModelPrefabs == null ||
+            effectModelPrefabs.Length == 0)
+        {
+            isEffectPlaying = false;
+            yield break;
+        }
+
+        GameObject prefab =
+            effectModelPrefabs[
+                Random.Range(
+                    0,
+                    effectModelPrefabs.Length
+                )
+            ];
+
+        if (prefab == null)
+        {
+            isEffectPlaying = false;
+            yield break;
+        }
+
+        Vector3 randomOffset =
+            new Vector3(
+                Random.Range(-spawnRadius, spawnRadius),
+                Random.Range(-0.02f, 0.02f),
+                Random.Range(-spawnRadius, spawnRadius)
+            );
+
+        Vector3 spawnPos =
+            hitPosition +
+            spawnOffset +
+            randomOffset;
+
+        GameObject effect =
+            Instantiate(
+                prefab,
+                spawnPos,
+                Random.rotation
+            );
+
+        float randomScale =
+            startScale *
+            Random.Range(0.8f, 1.3f);
+
+        effect.transform.localScale =
+            Vector3.one * randomScale;
+
+        Color selectedColor = Color.white;
+
+        if (effectColors != null &&
+            effectColors.Length > 0)
+        {
+            selectedColor =
+                effectColors[
+                    Random.Range(
+                        0,
+                        effectColors.Length
+                    )
+                ];
+        }
+
+        Renderer[] renderers =
+            effect.GetComponentsInChildren<Renderer>();
+
+        foreach (Renderer renderer in renderers)
+        {
+            Material[] mats = renderer.materials;
+
+            foreach (Material mat in mats)
+            {
+                if (mat == null)
+                    continue;
+
+                if (mat.HasProperty("_BaseColor"))
+                {
+                    mat.SetColor(
+                        "_BaseColor",
+                        selectedColor
+                    );
+                }
+
+                if (mat.HasProperty("_Color"))
+                {
+                    mat.SetColor(
+                        "_Color",
+                        selectedColor
+                    );
+                }
+
+                SetupTransparentMaterial(mat);
+            }
+        }
+
+        Vector3 driftDirection =
+            (
+                Vector3.up +
+                new Vector3(
+                    Random.Range(-0.15f, 0.15f),
+                    0f,
+                    Random.Range(-0.15f, 0.15f)
+                )
+            ).normalized;
+
+        Vector3 rotationSpeed =
+            new Vector3(
+                Random.Range(-120f, 120f),
+                Random.Range(-180f, 180f),
+                Random.Range(-120f, 120f)
+            );
+
+        float timer = 0f;
+
+        while (timer < effectDuration)
+        {
+            timer += Time.deltaTime;
+
+            float t =
+                Mathf.Clamp01(
+                    timer / effectDuration
+                );
+
+            effect.transform.position +=
+                driftDirection *
+                riseSpeed *
+                Time.deltaTime;
+
+            effect.transform.Rotate(
+                rotationSpeed *
+                Time.deltaTime,
+                Space.Self
+            );
+
+            float scale =
+                Mathf.Lerp(
+                    randomScale,
+                    0f,
+                    t
+                );
+
+            effect.transform.localScale =
+                Vector3.one * scale;
+
+            foreach (Renderer renderer in renderers)
+            {
+                Material[] mats =
+                    renderer.materials;
+
+                foreach (Material mat in mats)
+                {
+                    if (mat == null)
+                        continue;
+
+                    Color c = selectedColor;
+                    c.a = Mathf.Lerp(1f, 0f, t);
+
+                    if (mat.HasProperty("_BaseColor"))
+                    {
+                        mat.SetColor(
+                            "_BaseColor",
+                            c
+                        );
+                    }
+
+                    if (mat.HasProperty("_Color"))
+                    {
+                        mat.SetColor(
+                            "_Color",
+                            c
+                        );
+                    }
+                }
+            }
+
+            yield return null;
+        }
+
+        Destroy(effect);
+
+        isEffectPlaying = false;
+    }
+
+    private void SetupTransparentMaterial(Material mat)
+    {
+        if (mat == null)
+            return;
+
+        if (mat.HasProperty("_Surface"))
+        {
+            mat.SetFloat("_Surface", 1);
+        }
+
+        if (mat.HasProperty("_Blend"))
+        {
+            mat.SetFloat("_Blend", 0);
+        }
+
+        if (mat.HasProperty("_ZWrite"))
+        {
+            mat.SetFloat("_ZWrite", 0);
+        }
+
+        mat.renderQueue = 3000;
+    }
+
     private IEnumerator AnimateKeyPress()
     {
-        // 向下移动 (假设按键的上方是Y轴正方向，如果是Z轴请改成 Vector3.forward)
-        targetTransform.localPosition = originalLocalPos + Vector3.down * pressDepth;
+        if (targetTransform == null)
+            yield break;
 
-        // 等待设定的时间
-        yield return new WaitForSeconds(pressDuration);
+        targetTransform.localPosition =
+            originalLocalPos +
+            Vector3.down * pressDepth;
 
-        // 恢复原位
-        targetTransform.localPosition = originalLocalPos;
+        yield return new WaitForSeconds(
+            pressDuration
+        );
+
+        targetTransform.localPosition =
+            originalLocalPos;
     }
-    /// <summary>
-    /// Inspector 测试用：直接触发一次
-    /// </summary>
+
     public void TestTriggerInInspector()
     {
         TriggerInstrument(transform.position);

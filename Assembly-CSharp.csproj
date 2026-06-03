@@ -83,6 +83,7 @@
     <Compile Include="Assets\Scripts\LookAtCamera.cs" />
     <Compile Include="Assets\Scripts\Anchor\IAnchorData.cs" />
     <Compile Include="Assets\Scripts\test.cs" />
+    <Compile Include="Assets\Music\newMusic\Songbirds-Homecoming\FollowTarget.cs" />
     <Compile Include="Assets\My\MusicVisualizer.cs" />
     <Compile Include="Assets\newtest\new\MusicWaveParticleVisualizer.cs" />
     <Compile Include="Assets\Scripts\PortalCTR.cs" />
