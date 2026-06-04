@@ -68,8 +68,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   instrumentSound: {fileID: 8300000, guid: ea04fa8475294964493d51add2d719af, type: 3}
   volumeScale: 25
-  noteParticlePrefab: {fileID: 4362559027149544951, guid: 3ea57e1ca1ec1d04787b1c24c411aa0f,
-    type: 3}
+  effectModelPrefabs:
+  - {fileID: 1808433063850726693, guid: ac58cd094de333846be259cae6aa17fd, type: 3}
+  - {fileID: -1355538231805320032, guid: ac58cd094de333846be259cae6aa17fd, type: 3}
+  - {fileID: -6285460292192147446, guid: ac58cd094de333846be259cae6aa17fd, type: 3}
+  - {fileID: 3657516909408605596, guid: ac58cd094de333846be259cae6aa17fd, type: 3}
+  - {fileID: 6387142738630068898, guid: ac58cd094de333846be259cae6aa17fd, type: 3}
+  - {fileID: -3829566903942140307, guid: ac58cd094de333846be259cae6aa17fd, type: 3}
+  - {fileID: -929145148515610557, guid: ac58cd094de333846be259cae6aa17fd, type: 3}
+  - {fileID: 1742801809029800231, guid: ac58cd094de333846be259cae6aa17fd, type: 3}
+  effectColors:
+  - {r: 1, g: 0.5674863, b: 0, a: 0}
+  - {r: 1, g: 0.8812549, b: 0, a: 0}
+  - {r: 0.72067547, g: 1, b: 0, a: 0}
+  - {r: 0.22327036, g: 1, b: 0.50651425, a: 0}
+  - {r: 0, g: 0.8181114, b: 1, a: 0}
+  - {r: 1, g: 0.23529412, b: 0.8528924, a: 0}
+  - {r: 0, g: 0.548198, b: 1, a: 0}
+  spawnOffset: {x: 0, y: 0, z: 0}
+  spawnRadius: 0.05
+  effectDuration: 1.5
+  riseSpeed: 0.2
+  startScale: 5
   isKeyboardKey: 1
   pressDepth: 0.015
   pressDuration: 0.1
+  keyboardTriggerCooldown: 1
