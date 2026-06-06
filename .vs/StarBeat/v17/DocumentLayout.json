@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "E:\\UnityProject\\StarBeat\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{38FC46C4-124C-52E6-6834-8E4BBAA402D0}|Assembly-CSharp.csproj|e:\\unityproject\\starbeat\\assets\\scripts\\displayposition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38FC46C4-124C-52E6-6834-8E4BBAA402D0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\displayposition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{38FC46C4-124C-52E6-6834-8E4BBAA402D0}|Assembly-CSharp.csproj|e:\\unityproject\\starbeat\\assets\\my\\audioflowparticle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{38FC46C4-124C-52E6-6834-8E4BBAA402D0}|Assembly-CSharp.csproj|solutionrelative:assets\\my\\audioflowparticle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -122,11 +126,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
+              "Title": "DisplayPosition.cs",
+              "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\DisplayPosition.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DisplayPosition.cs",
+              "ToolTip": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\DisplayPosition.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DisplayPosition.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T06:42:14.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "FollowTarget.cs",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Music\\newMusic\\Songbirds-Homecoming\\FollowTarget.cs",
               "RelativeDocumentMoniker": "Assets\\Music\\newMusic\\Songbirds-Homecoming\\FollowTarget.cs",
@@ -138,7 +155,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "InstrumentInteractable.cs",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\geminNewInstrument\\InstrumentInteractable.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\geminNewInstrument\\InstrumentInteractable.cs",
@@ -150,7 +167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "StencilShader.shader",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Shader\\StencilShader.shader",
               "RelativeDocumentMoniker": "Assets\\Shader\\StencilShader.shader",
@@ -162,7 +179,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "AudioFlowParticle.cs",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\My\\AudioFlowParticle.cs",
               "RelativeDocumentMoniker": "Assets\\My\\AudioFlowParticle.cs",
@@ -175,7 +192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "VRHandTrigger.cs",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\geminNewInstrument\\VRHandTrigger.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\geminNewInstrument\\VRHandTrigger.cs",
@@ -187,7 +204,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MusicPlayerManager.cs",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\MusicPlayerManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MusicPlayerManager.cs",
@@ -199,7 +216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "HoleShader.shader",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Shader\\HoleShader.shader",
               "RelativeDocumentMoniker": "Assets\\Shader\\HoleShader.shader",
@@ -211,7 +228,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "AnchorCTR.cs",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\AnchorCTR.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\AnchorCTR.cs",
@@ -223,7 +240,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "AudioPillarParticle.cs",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\My\\AudioPillarParticle.cs",
               "RelativeDocumentMoniker": "Assets\\My\\AudioPillarParticle.cs",
@@ -235,7 +252,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "AudioOceanWaveParticle.cs",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\My\\AudioOceanWaveParticle.cs",
               "RelativeDocumentMoniker": "Assets\\My\\AudioOceanWaveParticle.cs",
@@ -247,7 +264,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "AudioController.cs",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Sindri Studios\\Music-Beat\\Scripts\\AudioController.cs",
               "RelativeDocumentMoniker": "Assets\\Sindri Studios\\Music-Beat\\Scripts\\AudioController.cs",
@@ -259,7 +276,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "SpatialAnchors.cs",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\SpatialAnchors.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SpatialAnchors.cs",
@@ -271,7 +288,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "StarrySky.shader",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\SKy\\StarrySky.shader",
               "RelativeDocumentMoniker": "Assets\\SKy\\StarrySky.shader",
@@ -283,7 +300,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Rainbow2.shader",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Rainbow\\Rainbow2.shader",
               "RelativeDocumentMoniker": "Assets\\Rainbow\\Rainbow2.shader",
@@ -295,7 +312,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "ShowPortal.cs",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\ShowPortal.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ShowPortal.cs",
@@ -307,7 +324,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "UnshObjectBehaviour.cs",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Sindri Studios\\Music-Beat\\Scripts\\UnshObjectBehaviour.cs",
               "RelativeDocumentMoniker": "Assets\\Sindri Studios\\Music-Beat\\Scripts\\UnshObjectBehaviour.cs",
@@ -319,7 +336,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "PortalCTR.cs",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\PortalCTR.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PortalCTR.cs",
@@ -331,7 +348,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "DrumHit.cs",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Sindri Studios\\Music-Beat\\Scripts\\DrumHit.cs",
               "RelativeDocumentMoniker": "Assets\\Sindri Studios\\Music-Beat\\Scripts\\DrumHit.cs",
@@ -343,7 +360,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "XRDrumStick.cs",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\XRDrumStick.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\XRDrumStick.cs",
@@ -355,7 +372,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "InstrumentInteractableEditor.cs",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Sindri Studios\\Music-Beat\\Scripts\\Editor\\InstrumentInteractableEditor.cs",
               "RelativeDocumentMoniker": "Assets\\Sindri Studios\\Music-Beat\\Scripts\\Editor\\InstrumentInteractableEditor.cs",
@@ -367,7 +384,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "test.cs",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\test.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\test.cs",
@@ -379,7 +396,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "SpaceCalibration.cs",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\Anchor\\SpaceCalibration.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Anchor\\SpaceCalibration.cs",
@@ -391,7 +408,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "ParticlesSimpleLit.shader",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.11\\Shaders\\Particles\\ParticlesSimpleLit.shader",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.11\\Shaders\\Particles\\ParticlesSimpleLit.shader",
@@ -404,7 +421,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "RainbowShader.shader",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Rainbow\\RainbowShader.shader",
               "RelativeDocumentMoniker": "Assets\\Rainbow\\RainbowShader.shader",
@@ -416,7 +433,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "IAnchorData.cs",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\Anchor\\IAnchorData.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Anchor\\IAnchorData.cs",
@@ -428,7 +445,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "ShapeInfo.cs",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\Anchor\\ShapeInfo.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Anchor\\ShapeInfo.cs",
@@ -440,7 +457,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "SeeThroughManager.cs",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\SeeThroughManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SeeThroughManager.cs",
@@ -452,7 +469,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "LookAtCamera.cs",
               "DocumentMoniker": "E:\\UnityProject\\StarBeat\\Assets\\Scripts\\LookAtCamera.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\LookAtCamera.cs",
