@@ -26,8 +26,10 @@ public class ShowPortal : MonoBehaviour
     }
     private void ShowRainbow(bool v)
     {
-        if (v)
+        if (v) { 
             portal[0].transform.position = transformObject.transform.position;
+
+        }
         else
             portal[0].transform.position = new Vector3(999, 999, 999);
     }
@@ -35,9 +37,13 @@ public class ShowPortal : MonoBehaviour
     private void ShowStar(bool v)
     {
         if (v)
+        {
             portal[1].transform.position = transformObject.transform.position;
+            Debug.Log(transform.position = transformObject.transform.position);
+        }
         else
             portal[1].transform.position = new Vector3(999, 999, 999);
+
     }
     private void OnEnable()
     {
